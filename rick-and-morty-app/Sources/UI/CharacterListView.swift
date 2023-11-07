@@ -16,8 +16,14 @@ struct CharacterListView: View {
 		List(
 			viewModel.list,
 			id: \.self
-		) { item in
-			Text(item)
+		) { character in
+			NavigationLink(
+				destination: CharacterDetailView(
+					viewModel: CharacterDetailViewViewModel(
+						character: character
+					))) {
+						Text(character)
+					}
 		}
 		.navigationTitle("Character List")
 	}
