@@ -9,7 +9,9 @@ import SwiftUI
 
 enum RickAndMortyFont: String, CaseIterable {
 	
-	case regular = "GetSchwifty-Regular" // Rick_And_Morty.ttf
+	/// Rick_And_Morty.ttf font family is 'GetSchwifty-Regular':
+	/// uncomment printAppFontFamilies() RickAndMortyApp.swift line 14 to see this name in console
+	case regular = "GetSchwifty-Regular"
 }
 
 extension Font {
