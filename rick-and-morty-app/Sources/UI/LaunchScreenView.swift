@@ -39,7 +39,9 @@ struct LaunchScreenView: View {
 					)
 				)
 			) { _ in // item
-        main.lauchScreenHasBeenAlreadyDisplayed = true
+				withAnimation {
+					main.lauchScreenHasBeenAlreadyDisplayed = true
+				}
 			}
 
 			// MARK: did Become Active

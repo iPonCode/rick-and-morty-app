@@ -22,12 +22,14 @@ struct MainView: View {
 					viewModel: viewModel
 				)
 			}
+			.transition(.move(edge: .top))
 
 		} else {
 			LaunchScreenView()
+				.transition(.move(edge: .bottom))
 		}
-
 	}
+
 }
 
 struct MainView_Previews: PreviewProvider {
