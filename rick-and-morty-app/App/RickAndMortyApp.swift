@@ -13,12 +13,9 @@ struct RickAndMortyApp: App {
 
 		WindowGroup {
 
-			let viewModel = CharacterListViewViewModel()
-			NavigationView {
-				CharacterListView(
-					viewModel: viewModel
-				)
-			}
+			let main = Main()
+			MainView()
+				.environmentObject(main)
 
 		}
 	}

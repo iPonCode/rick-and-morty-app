@@ -12,7 +12,6 @@ struct CharacterListView: View {
 	@ObservedObject var viewModel: CharacterListViewViewModel
 
 	var body: some View {
-
 		List(
 			viewModel.list,
 			id: \.self
