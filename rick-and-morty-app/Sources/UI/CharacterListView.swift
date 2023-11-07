@@ -8,18 +8,25 @@
 import SwiftUI
 
 struct CharacterListView: View {
+	
+	@ObservedObject var viewModel: CharacterListViewViewModel
+
 	var body: some View {
-		VStack {
-			Image(systemName: "globe")
-				.imageScale(.large)
-				.foregroundStyle(.tint)
-			Text("Hello, world!")
+
+		List(
+			viewModel.list,
+			id: \.self
+		) { item in
+			Text(item)
 		}
-		.padding()
+		.navigationTitle("Character List")
 	}
+
 }
 
 #Preview {
-	CharacterListView()
+	CharacterListView(
+		viewModel: CharacterListViewViewModel()
+	)
 }
 
