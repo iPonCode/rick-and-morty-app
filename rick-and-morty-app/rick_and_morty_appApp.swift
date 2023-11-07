@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct rick_and_morty_appApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-    }
+	var body: some Scene {
+		WindowGroup {
+			ContentView()
+		}
+	}
 }
+
