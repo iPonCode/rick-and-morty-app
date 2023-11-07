@@ -15,6 +15,7 @@ struct CharacterDetailView: View {
 
 		VStack {
 			Text(viewModel.character)
+				.font(.appFont(.regular28))
 		}
 		.navigationTitle("Character Detail")
 	}
