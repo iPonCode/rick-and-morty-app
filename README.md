@@ -13,6 +13,11 @@
 <!-- DESCRIPTION -->
 This is a simple code test with the purpose of develop an app to review every single character of the Rick and Morty TV using the [Rick and Morty API](https://rickandmortyapi.com/).
 
+- Apply things like SOLID
+- Very image oriented
+- UX is important
+
+
 Extra requirements:
 - [ ] Use SwiftUI
 - [ ] Cache images from network to improve performance
