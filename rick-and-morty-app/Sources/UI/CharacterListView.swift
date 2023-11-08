@@ -29,9 +29,12 @@ struct CharacterListView: View {
 
 }
 
-#Preview {
-	CharacterListView(
-		viewModel: CharacterListViewViewModel()
-	)
+struct CharacterListView_Previews: PreviewProvider {
+
+  static var previews: some View {
+    CharacterListView(
+      viewModel: CharacterListViewViewModel()
+    )
+  }
 }
 
