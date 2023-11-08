@@ -27,6 +27,7 @@
 		2D888C402AFB18D500180FF5 /* Dictionary+PercentEncoded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D888C3F2AFB18D500180FF5 /* Dictionary+PercentEncoded.swift */; };
 		2D888C422AFB192600180FF5 /* Optional+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D888C412AFB192600180FF5 /* Optional+String.swift */; };
 		2D888C452AFB1AB600180FF5 /* _getAllCharactersResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D888C442AFB1AB600180FF5 /* _getAllCharactersResponse.json */; };
+		2D888C482AFB49A700180FF5 /* BigSymmetricalProgressStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D888C472AFB49A700180FF5 /* BigSymmetricalProgressStyle.swift */; };
 		D07F41AA2AFAC913002F4130 /* Rick_And_Morty.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D07F41A92AFAC913002F4130 /* Rick_And_Morty.ttf */; };
 		D07F41AC2AFAC953002F4130 /* RickAndMortyFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07F41AB2AFAC953002F4130 /* RickAndMortyFont.swift */; };
 		D07F41B12AFACB77002F4130 /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07F41B02AFACB77002F4130 /* AppFont.swift */; };
@@ -86,6 +87,7 @@
 		2D888C3F2AFB18D500180FF5 /* Dictionary+PercentEncoded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+PercentEncoded.swift"; sourceTree = "<group>"; };
 		2D888C412AFB192600180FF5 /* Optional+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional+String.swift"; sourceTree = "<group>"; };
 		2D888C442AFB1AB600180FF5 /* _getAllCharactersResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = _getAllCharactersResponse.json; sourceTree = "<group>"; };
+		2D888C472AFB49A700180FF5 /* BigSymmetricalProgressStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigSymmetricalProgressStyle.swift; sourceTree = "<group>"; };
 		D07F41A92AFAC913002F4130 /* Rick_And_Morty.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Rick_And_Morty.ttf; sourceTree = "<group>"; };
 		D07F41AB2AFAC953002F4130 /* RickAndMortyFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RickAndMortyFont.swift; sourceTree = "<group>"; };
 		D07F41AD2AFACA3C002F4130 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -247,6 +249,14 @@
 			path = Mocks;
 			sourceTree = "<group>";
 		};
+		2D888C462AFB496800180FF5 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				2D888C472AFB49A700180FF5 /* BigSymmetricalProgressStyle.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
 		D07F41A82AFAC8C5002F4130 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -259,6 +269,7 @@
 		D07F41AE2AFACB77002F4130 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				2D888C462AFB496800180FF5 /* Styles */,
 				D07F41AF2AFACB77002F4130 /* Fonts */,
 			);
 			path = Common;
@@ -592,6 +603,7 @@
 				2D888C212AFB063700180FF5 /* CharacterStatusResponse.swift in Sources */,
 				D08ADED92AFA972800111FC6 /* CharacterListViewViewModel.swift in Sources */,
 				2D888C222AFB063700180FF5 /* CharacterGenderResponse.swift in Sources */,
+				2D888C482AFB49A700180FF5 /* BigSymmetricalProgressStyle.swift in Sources */,
 				D07F41B12AFACB77002F4130 /* AppFont.swift in Sources */,
 				2D888C232AFB063700180FF5 /* OriginResponse.swift in Sources */,
 				D08ADEDC2AFAA0D800111FC6 /* CharacterDetailView.swift in Sources */,
