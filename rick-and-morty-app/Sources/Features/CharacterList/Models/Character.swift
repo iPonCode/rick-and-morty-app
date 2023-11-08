@@ -7,7 +7,9 @@
 
 import Foundation
 
-struct Character {
+struct Character: Identifiable,
+                  Equatable,
+                  Hashable {
 
     let id,
         name,

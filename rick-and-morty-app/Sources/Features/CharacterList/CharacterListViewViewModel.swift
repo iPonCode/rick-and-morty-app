@@ -9,5 +9,35 @@ import Combine
 
 final class CharacterListViewViewModel: ObservableObject {
 
-	@Published private(set) var list: [String] = (1...25).map { "Character" + " " + String($0) }
+	@Published private(set) var list: [Character] = []
+  @Published private(set) var error: ApiError?
+
+  init() {
+    Task {
+      await self.asyncAllCharacters()
+    }
+  }
+
+  @MainActor
+  func asyncAllCharacters() async {
+
+    let endPoint = CharactersEndpoints.character
+    // let mockedApiClient = MockApiClient()
+    let apiClient = ApiClient()
+
+    Task.init {
+      do {
+        let allCharactersResponse = try await apiClient.asyncRequest( // mockedApiClient.asyncRequest(
+          endpoint: endPoint,
+          responseModel: AllCharactersResponse.self,
+          addAditionalHeaders: false
+        )
+        list = allCharactersResponse.results.map(CharacterMapper.map)
+
+      } catch let error as ApiError {
+        self.error = error
+      }
+    }
+  }
+
 }

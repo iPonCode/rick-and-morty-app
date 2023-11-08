@@ -16,6 +16,17 @@
 		2D888C232AFB063700180FF5 /* OriginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D888C1F2AFB063700180FF5 /* OriginResponse.swift */; };
 		2D888C252AFB0B7100180FF5 /* CharacterMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D888C242AFB0B7100180FF5 /* CharacterMapper.swift */; };
 		2D888C272AFB0BC200180FF5 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D888C262AFB0BC200180FF5 /* Character.swift */; };
+		2D888C332AFB10AF00180FF5 /* CharactersEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D888C2A2AFB10AF00180FF5 /* CharactersEndpoints.swift */; };
+		2D888C352AFB10AF00180FF5 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D888C2C2AFB10AF00180FF5 /* ApiClient.swift */; };
+		2D888C362AFB10AF00180FF5 /* MockApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D888C2D2AFB10AF00180FF5 /* MockApiClient.swift */; };
+		2D888C372AFB10AF00180FF5 /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D888C2E2AFB10AF00180FF5 /* RequestMethod.swift */; };
+		2D888C382AFB10AF00180FF5 /* EndpointProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D888C302AFB10AF00180FF5 /* EndpointProvider.swift */; };
+		2D888C392AFB10AF00180FF5 /* ApiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D888C312AFB10AF00180FF5 /* ApiProtocol.swift */; };
+		2D888C3A2AFB10AF00180FF5 /* Mockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D888C322AFB10AF00180FF5 /* Mockable.swift */; };
+		2D888C3D2AFB14AF00180FF5 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D888C3C2AFB14AF00180FF5 /* ApiError.swift */; };
+		2D888C402AFB18D500180FF5 /* Dictionary+PercentEncoded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D888C3F2AFB18D500180FF5 /* Dictionary+PercentEncoded.swift */; };
+		2D888C422AFB192600180FF5 /* Optional+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D888C412AFB192600180FF5 /* Optional+String.swift */; };
+		2D888C452AFB1AB600180FF5 /* _getAllCharactersResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D888C442AFB1AB600180FF5 /* _getAllCharactersResponse.json */; };
 		D07F41AA2AFAC913002F4130 /* Rick_And_Morty.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D07F41A92AFAC913002F4130 /* Rick_And_Morty.ttf */; };
 		D07F41AC2AFAC953002F4130 /* RickAndMortyFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07F41AB2AFAC953002F4130 /* RickAndMortyFont.swift */; };
 		D07F41B12AFACB77002F4130 /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07F41B02AFACB77002F4130 /* AppFont.swift */; };
@@ -64,6 +75,17 @@
 		2D888C1F2AFB063700180FF5 /* OriginResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OriginResponse.swift; sourceTree = "<group>"; };
 		2D888C242AFB0B7100180FF5 /* CharacterMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterMapper.swift; sourceTree = "<group>"; };
 		2D888C262AFB0BC200180FF5 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		2D888C2A2AFB10AF00180FF5 /* CharactersEndpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersEndpoints.swift; sourceTree = "<group>"; };
+		2D888C2C2AFB10AF00180FF5 /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		2D888C2D2AFB10AF00180FF5 /* MockApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockApiClient.swift; sourceTree = "<group>"; };
+		2D888C2E2AFB10AF00180FF5 /* RequestMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestMethod.swift; sourceTree = "<group>"; };
+		2D888C302AFB10AF00180FF5 /* EndpointProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointProvider.swift; sourceTree = "<group>"; };
+		2D888C312AFB10AF00180FF5 /* ApiProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiProtocol.swift; sourceTree = "<group>"; };
+		2D888C322AFB10AF00180FF5 /* Mockable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mockable.swift; sourceTree = "<group>"; };
+		2D888C3C2AFB14AF00180FF5 /* ApiError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		2D888C3F2AFB18D500180FF5 /* Dictionary+PercentEncoded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+PercentEncoded.swift"; sourceTree = "<group>"; };
+		2D888C412AFB192600180FF5 /* Optional+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional+String.swift"; sourceTree = "<group>"; };
+		2D888C442AFB1AB600180FF5 /* _getAllCharactersResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = _getAllCharactersResponse.json; sourceTree = "<group>"; };
 		D07F41A92AFAC913002F4130 /* Rick_And_Morty.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Rick_And_Morty.ttf; sourceTree = "<group>"; };
 		D07F41AB2AFAC953002F4130 /* RickAndMortyFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RickAndMortyFont.swift; sourceTree = "<group>"; };
 		D07F41AD2AFACA3C002F4130 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -146,6 +168,7 @@
 		2D888C132AFB046400180FF5 /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				2D888C282AFB10AF00180FF5 /* Network */,
 				2D888C142AFB046400180FF5 /* Utils */,
 			);
 			path = Commons;
@@ -154,6 +177,7 @@
 		2D888C142AFB046400180FF5 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				2D888C3E2AFB18D500180FF5 /* Extensions */,
 				2D888C152AFB046400180FF5 /* Protocols */,
 			);
 			path = Utils;
@@ -165,6 +189,62 @@
 				2D888C162AFB046400180FF5 /* Mapper.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		2D888C282AFB10AF00180FF5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2D888C2C2AFB10AF00180FF5 /* ApiClient.swift */,
+				2D888C2D2AFB10AF00180FF5 /* MockApiClient.swift */,
+				2D888C2E2AFB10AF00180FF5 /* RequestMethod.swift */,
+				2D888C292AFB10AF00180FF5 /* EndPointsProviders */,
+				2D888C2F2AFB10AF00180FF5 /* Protocols */,
+				2D888C3B2AFB14AF00180FF5 /* Models */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2D888C292AFB10AF00180FF5 /* EndPointsProviders */ = {
+			isa = PBXGroup;
+			children = (
+				2D888C2A2AFB10AF00180FF5 /* CharactersEndpoints.swift */,
+			);
+			path = EndPointsProviders;
+			sourceTree = "<group>";
+		};
+		2D888C2F2AFB10AF00180FF5 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2D888C302AFB10AF00180FF5 /* EndpointProvider.swift */,
+				2D888C312AFB10AF00180FF5 /* ApiProtocol.swift */,
+				2D888C322AFB10AF00180FF5 /* Mockable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		2D888C3B2AFB14AF00180FF5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2D888C3C2AFB14AF00180FF5 /* ApiError.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2D888C3E2AFB18D500180FF5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2D888C412AFB192600180FF5 /* Optional+String.swift */,
+				2D888C3F2AFB18D500180FF5 /* Dictionary+PercentEncoded.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2D888C432AFB1AB600180FF5 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				2D888C442AFB1AB600180FF5 /* _getAllCharactersResponse.json */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		D07F41A82AFAC8C5002F4130 /* Fonts */ = {
@@ -252,6 +332,7 @@
 		D08ADECD2AFA662100111FC6 /* Resorces */ = {
 			isa = PBXGroup;
 			children = (
+				2D888C432AFB1AB600180FF5 /* Mocks */,
 				D07F41A82AFAC8C5002F4130 /* Fonts */,
 				D08ADEEB2AFAB54600111FC6 /* Video */,
 				D08ADED62AFA692200111FC6 /* Theme */,
@@ -456,6 +537,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D888C452AFB1AB600180FF5 /* _getAllCharactersResponse.json in Resources */,
 				D08ADEAB2AFA5EAE00111FC6 /* Preview Assets.xcassets in Resources */,
 				D08ADEED2AFAB95600111FC6 /* launchScreen.mp4 in Resources */,
 				D08ADEA82AFA5EAE00111FC6 /* Assets.xcassets in Resources */,
@@ -484,19 +566,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D888C372AFB10AF00180FF5 /* RequestMethod.swift in Sources */,
+				2D888C422AFB192600180FF5 /* Optional+String.swift in Sources */,
 				D08ADEE82AFAB31D00111FC6 /* Main.swift in Sources */,
 				2D888C202AFB063700180FF5 /* SingleLocationResponse.swift in Sources */,
 				D08ADEA62AFA5EAC00111FC6 /* CharacterListView.swift in Sources */,
+				2D888C362AFB10AF00180FF5 /* MockApiClient.swift in Sources */,
 				2D888C1B2AFB054A00180FF5 /* CharacterResponse.swift in Sources */,
 				D08ADEDE2AFAA16700111FC6 /* CharacterDetailViewViewModel.swift in Sources */,
+				2D888C3A2AFB10AF00180FF5 /* Mockable.swift in Sources */,
+				2D888C402AFB18D500180FF5 /* Dictionary+PercentEncoded.swift in Sources */,
 				D07F41AC2AFAC953002F4130 /* RickAndMortyFont.swift in Sources */,
 				D08ADEEF2AFAC34B00111FC6 /* MainView.swift in Sources */,
 				D08ADEE32AFAA95100111FC6 /* PlayerView.swift in Sources */,
 				2D888C172AFB046400180FF5 /* Mapper.swift in Sources */,
 				2D888C272AFB0BC200180FF5 /* Character.swift in Sources */,
 				D08ADEA42AFA5EAC00111FC6 /* RickAndMortyApp.swift in Sources */,
+				2D888C382AFB10AF00180FF5 /* EndpointProvider.swift in Sources */,
+				2D888C352AFB10AF00180FF5 /* ApiClient.swift in Sources */,
+				2D888C3D2AFB14AF00180FF5 /* ApiError.swift in Sources */,
 				2D888C252AFB0B7100180FF5 /* CharacterMapper.swift in Sources */,
+				2D888C392AFB10AF00180FF5 /* ApiProtocol.swift in Sources */,
 				2D888C192AFB04C400180FF5 /* AllCharactersResponse.swift in Sources */,
+				2D888C332AFB10AF00180FF5 /* CharactersEndpoints.swift in Sources */,
 				2D888C212AFB063700180FF5 /* CharacterStatusResponse.swift in Sources */,
 				D08ADED92AFA972800111FC6 /* CharacterListViewViewModel.swift in Sources */,
 				2D888C222AFB063700180FF5 /* CharacterGenderResponse.swift in Sources */,

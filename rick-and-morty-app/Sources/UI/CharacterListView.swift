@@ -19,9 +19,9 @@ struct CharacterListView: View {
 			NavigationLink(
 				destination: CharacterDetailView(
 					viewModel: CharacterDetailViewViewModel(
-						character: character
+            character: character.name
 					))) {
-						Text(character)
+            Text(character.name)
 					}
 		}
 		.navigationTitle("Character List")
