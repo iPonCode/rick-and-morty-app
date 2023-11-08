@@ -11,24 +11,36 @@ struct MainView: View {
 
 	@EnvironmentObject var main: Main
 
-	var body: some View {
+  // The viewModel was created here instead inside conditional,
+  // for launching the first request as soon as possible
+  let viewModel = CharacterListViewViewModel()
 
-		if main.lauchScreenHasBeenAlreadyDisplayed {
+  var body: some View {
 
-			let viewModel = CharacterListViewViewModel()
+    Group {
 
-			NavigationView {
-				CharacterListView(
-					viewModel: viewModel
-				)
-			}
-			.transition(.move(edge: .top))
+      if main.lauchScreenHasBeenAlreadyDisplayed {
+        
+        NavigationView {
+          // let viewModel = CharacterListViewViewModel()
+          CharacterListView(
+            viewModel: viewModel
+          )
+        }
+        .transition(.move(edge: .top))
+        
+      } else {
+        LaunchScreenView()
+          .transition(.move(edge: .bottom))
+      }
 
-		} else {
-			LaunchScreenView()
-				.transition(.move(edge: .bottom))
-		}
-	}
+    }
+    .onAppear {
+      Task {
+        await viewModel.asyncAllCharacters()
+      }
+    }
+  }
 
 }
 

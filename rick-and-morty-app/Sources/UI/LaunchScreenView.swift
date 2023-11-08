@@ -12,6 +12,14 @@ struct LaunchScreenView: View {
 
 	@EnvironmentObject var main: Main
 
+  @State private var progressAmount = 0.0
+  let totalAmount = 4 / 0.1
+  let timer = Timer.publish(
+    every: 0.1,
+    on: .main,
+    in: .common
+  ).autoconnect()
+
 	@State private var player = AVPlayer()
 	private let videoName = "launchScreen"
 
@@ -61,6 +69,26 @@ struct LaunchScreenView: View {
 			) { _ in
 				player.pause()
 			}
+      .overlay(alignment: .center) {
+        ProgressView(
+          value: progressAmount,
+          total: totalAmount
+        )
+        .progressViewStyle(
+          BigSymmetricalProgressStyle(proxy: proxy)
+        )
+        .offset(
+          CGSize(
+            width: 0,
+            height: proxy.size.height / 4
+          )
+        )
+        .onReceive(timer) { _ in
+          if progressAmount < totalAmount {
+            progressAmount += 1
+          }
+        }
+      }
 		}
 		.ignoresSafeArea()
 	}
