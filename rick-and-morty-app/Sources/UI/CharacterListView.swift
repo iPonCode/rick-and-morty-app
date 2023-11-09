@@ -21,7 +21,23 @@ struct CharacterListView: View {
 					viewModel: CharacterDetailViewViewModel(
             character: character.name
 					))) {
-            Text(character.name)
+            HStack(alignment: .top) {
+              AsyncImage(url: URL(string: character.image)) { image in
+                 image
+                     .resizable()
+                     .aspectRatio(contentMode: .fit)
+                     .frame(height: 112)
+             } placeholder: {
+               Rectangle()
+                 .fill(.clear)
+                 .frame(width: 112, height: 112)
+                 .overlay(alignment: .center) {
+                   ProgressView()
+                     .tint(.black)
+                 }
+             }
+              Text(character.name)
+            }
 					}
 		}
 		.navigationTitle("Character List")
