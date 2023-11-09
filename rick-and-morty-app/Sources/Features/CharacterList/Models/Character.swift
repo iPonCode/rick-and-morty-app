@@ -35,7 +35,7 @@ extension Character {
       gender: "Male",
       origin: "Earth (C-137)",
       location: "Citadel of Ricks",
-      image: "https://rickandmortyapi.com/api/location/3",
+      image: "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
       numberOfEpisodes: "52",
       created: "2017-11-04T18:48:46.250Z"
     )
