@@ -33,14 +33,14 @@ private extension RickAndMortyApp {
 		let appearance = UINavigationBarAppearance()
 		let attributesBig: [NSAttributedString.Key: Any] = [
 			.font: UIFont(
-				name: RickAndMortyFont.regular.rawValue,
-				size: 32
+        name: UbuntuFont.bold.rawValue,
+				size: 30
 			)!
 		]
 		let attributesSmall: [NSAttributedString.Key: Any] = [
 			.font: UIFont(
-				name: RickAndMortyFont.regular.rawValue,
-				size: 16
+        name: UbuntuFont.regular.rawValue,
+				size: 15
 			)!
 		]
 		appearance.largeTitleTextAttributes = attributesBig

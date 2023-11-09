@@ -21,7 +21,7 @@ struct CharacterListView: View {
 					viewModel: CharacterDetailViewViewModel(
             character: character.name
 					))) {
-            HStack(alignment: .top) {
+            HStack(alignment: .center) {
               AsyncImage(url: URL(string: character.image)) { image in
                  image
                      .resizable()
@@ -36,7 +36,19 @@ struct CharacterListView: View {
                      .tint(.black)
                  }
              }
-              Text(character.name)
+              VStack(alignment: .leading, spacing: 4) {
+                Text(character.name)
+                  .font(.appFont(.regular22))
+                Text(character.status)
+                  .font(.ubuntuAppFont(.medium16))
+                  .foregroundColor(.purple)
+                Text(character.gender)
+                  .font(.ubuntuAppFont(.regular18))
+                  .foregroundColor(.brown)
+                Text(character.location)
+                  .font(.ubuntuAppFont(.regular16))
+                
+              }
             }
 					}
 		}
