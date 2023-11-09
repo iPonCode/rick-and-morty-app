@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		2D72F7A02AFCFCF000BEC67D /* CharacterItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D72F79F2AFCFCF000BEC67D /* CharacterItemView.swift */; };
 		2D72F7A22AFD031B00BEC67D /* View+Redacted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D72F7A12AFD031B00BEC67D /* View+Redacted.swift */; };
+		2D72F7A62AFD5B5500BEC67D /* InfoMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D72F7A52AFD5B5500BEC67D /* InfoMapper.swift */; };
+		2D72F7A82AFD5B8C00BEC67D /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D72F7A72AFD5B8C00BEC67D /* Info.swift */; };
+		2D72F7AA2AFD5D7000BEC67D /* InfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D72F7A92AFD5D7000BEC67D /* InfoResponse.swift */; };
 		2D888C172AFB046400180FF5 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D888C162AFB046400180FF5 /* Mapper.swift */; };
 		2D888C192AFB04C400180FF5 /* AllCharactersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D888C182AFB04C400180FF5 /* AllCharactersResponse.swift */; };
 		2D888C1B2AFB054A00180FF5 /* CharacterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D888C1A2AFB054A00180FF5 /* CharacterResponse.swift */; };
@@ -81,6 +84,9 @@
 /* Begin PBXFileReference section */
 		2D72F79F2AFCFCF000BEC67D /* CharacterItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterItemView.swift; sourceTree = "<group>"; };
 		2D72F7A12AFD031B00BEC67D /* View+Redacted.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Redacted.swift"; sourceTree = "<group>"; };
+		2D72F7A52AFD5B5500BEC67D /* InfoMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoMapper.swift; sourceTree = "<group>"; };
+		2D72F7A72AFD5B8C00BEC67D /* Info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
+		2D72F7A92AFD5D7000BEC67D /* InfoResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoResponse.swift; sourceTree = "<group>"; };
 		2D888C162AFB046400180FF5 /* Mapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
 		2D888C182AFB04C400180FF5 /* AllCharactersResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllCharactersResponse.swift; sourceTree = "<group>"; };
 		2D888C1A2AFB054A00180FF5 /* CharacterResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterResponse.swift; sourceTree = "<group>"; };
@@ -174,6 +180,7 @@
 		2D888C0E2AFB02EB00180FF5 /* ApiModels */ = {
 			isa = PBXGroup;
 			children = (
+				2D72F7A92AFD5D7000BEC67D /* InfoResponse.swift */,
 				2D888C182AFB04C400180FF5 /* AllCharactersResponse.swift */,
 				2D888C1A2AFB054A00180FF5 /* CharacterResponse.swift */,
 				2D888C1D2AFB063700180FF5 /* CharacterStatusResponse.swift */,
@@ -187,6 +194,7 @@
 		2D888C0F2AFB02F700180FF5 /* Mappers */ = {
 			isa = PBXGroup;
 			children = (
+				2D72F7A52AFD5B5500BEC67D /* InfoMapper.swift */,
 				2D888C242AFB0B7100180FF5 /* CharacterMapper.swift */,
 			);
 			path = Mappers;
@@ -195,6 +203,7 @@
 		2D888C102AFB030000180FF5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2D72F7A72AFD5B8C00BEC67D /* Info.swift */,
 				2D888C262AFB0BC200180FF5 /* Character.swift */,
 			);
 			path = Models;
@@ -632,10 +641,12 @@
 				2D888C372AFB10AF00180FF5 /* RequestMethod.swift in Sources */,
 				2D888C422AFB192600180FF5 /* Optional+String.swift in Sources */,
 				D08ADEE82AFAB31D00111FC6 /* Main.swift in Sources */,
+				2D72F7A82AFD5B8C00BEC67D /* Info.swift in Sources */,
 				2D888C202AFB063700180FF5 /* SingleLocationResponse.swift in Sources */,
 				2D72F7A02AFCFCF000BEC67D /* CharacterItemView.swift in Sources */,
 				D08ADEA62AFA5EAC00111FC6 /* CharacterListView.swift in Sources */,
 				2D888C362AFB10AF00180FF5 /* MockApiClient.swift in Sources */,
+				2D72F7AA2AFD5D7000BEC67D /* InfoResponse.swift in Sources */,
 				2D888C1B2AFB054A00180FF5 /* CharacterResponse.swift in Sources */,
 				D08ADEDE2AFAA16700111FC6 /* CharacterDetailViewViewModel.swift in Sources */,
 				2D888C3A2AFB10AF00180FF5 /* Mockable.swift in Sources */,
@@ -662,6 +673,7 @@
 				D07F41B12AFACB77002F4130 /* AppFont.swift in Sources */,
 				2D888C5C2AFC5F5800180FF5 /* UbuntuAppFont.swift in Sources */,
 				2D888C232AFB063700180FF5 /* OriginResponse.swift in Sources */,
+				2D72F7A62AFD5B5500BEC67D /* InfoMapper.swift in Sources */,
 				D08ADEDC2AFAA0D800111FC6 /* CharacterDetailView.swift in Sources */,
 				D08ADEE22AFAA95100111FC6 /* OneTimePlayerUIView.swift in Sources */,
 				D08ADEE52AFAB16100111FC6 /* LaunchScreenView.swift in Sources */,

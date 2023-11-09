@@ -11,23 +11,23 @@ struct Character: Identifiable,
                   Equatable,
                   Hashable {
 
-    let id,
-        name,
-        status,
-        species,
-        type,
-        gender,
-        origin,
-        location,
-        image,
-        numberOfEpisodes,
-        created: String
+  let id: Int
+  let name,
+      status,
+      species,
+      type,
+      gender,
+      origin,
+      location,
+      image,
+      numberOfEpisodes,
+      created: String
 }
 
 extension Character {
   static var previewData: Character {
     Character(
-      id: "1",
+      id: 1,
       name: "Rick Sanchez",
       status: "Alive",
       species: "Human",
