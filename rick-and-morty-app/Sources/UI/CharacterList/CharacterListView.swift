@@ -30,25 +30,29 @@ struct CharacterListView: View {
                 CharacterItemView(character: character)
               }
               .frame(height: 120)
-//              .containerRelativeFrame(
-//                .vertical,
-//                count: 5, // TODO: calculate number of elements based on current screen height
-//                spacing: 4
-//              )
+              /*
+              .containerRelativeFrame(
+                .vertical,
+                // TODO: calculate number of elements based on current screen height
+                count: 5,
+                spacing: 4
+              )
+              */
               .scrollTransition { content, phase in
                 content
-                  .scaleEffect(phase.isIdentity ? 1.0 : 0.6)
-                  .opacity(phase.isIdentity ? 1.0 : (1.0 - phase.value))
-//                  .grayscale(phase.value)
+                  .scaleEffect(phase.isIdentity ? 1.0 : 0.5, anchor: .trailing)
+                  .opacity(phase.isIdentity ? 1.0 : 0.75)
+                  .grayscale(phase.isIdentity ? 0.0 : 1.25)
+                  .blur(radius: phase.isIdentity ? 0.0 : 5.0)
               }
         }
       }
       .safeAreaPadding(.all)
-//      .scrollTargetLayout()
+      //.scrollTargetLayout()
     }
     .scrollIndicators(.hidden)
-//    .scrollTargetBehavior(.paging)
-//    .scrollTargetBehavior(.viewAligned(limitBehavior: .always))
+    //.scrollTargetBehavior(.paging)
+    //.scrollTargetBehavior(.viewAligned(limitBehavior: .always))
     .navigationTitle("Character List")
   }
 
