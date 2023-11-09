@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D72F7A02AFCFCF000BEC67D /* CharacterItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D72F79F2AFCFCF000BEC67D /* CharacterItemView.swift */; };
+		2D72F7A22AFD031B00BEC67D /* View+Redacted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D72F7A12AFD031B00BEC67D /* View+Redacted.swift */; };
 		2D888C172AFB046400180FF5 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D888C162AFB046400180FF5 /* Mapper.swift */; };
 		2D888C192AFB04C400180FF5 /* AllCharactersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D888C182AFB04C400180FF5 /* AllCharactersResponse.swift */; };
 		2D888C1B2AFB054A00180FF5 /* CharacterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D888C1A2AFB054A00180FF5 /* CharacterResponse.swift */; };
@@ -77,6 +79,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D72F79F2AFCFCF000BEC67D /* CharacterItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterItemView.swift; sourceTree = "<group>"; };
+		2D72F7A12AFD031B00BEC67D /* View+Redacted.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Redacted.swift"; sourceTree = "<group>"; };
 		2D888C162AFB046400180FF5 /* Mapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
 		2D888C182AFB04C400180FF5 /* AllCharactersResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllCharactersResponse.swift; sourceTree = "<group>"; };
 		2D888C1A2AFB054A00180FF5 /* CharacterResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterResponse.swift; sourceTree = "<group>"; };
@@ -158,6 +162,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D72F79E2AFCFC9D00BEC67D /* CharacterList */ = {
+			isa = PBXGroup;
+			children = (
+				D08ADEA52AFA5EAC00111FC6 /* CharacterListView.swift */,
+				2D72F79F2AFCFCF000BEC67D /* CharacterItemView.swift */,
+			);
+			path = CharacterList;
+			sourceTree = "<group>";
+		};
 		2D888C0E2AFB02EB00180FF5 /* ApiModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -255,6 +268,7 @@
 		2D888C3E2AFB18D500180FF5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				2D72F7A12AFD031B00BEC67D /* View+Redacted.swift */,
 				2D888C412AFB192600180FF5 /* Optional+String.swift */,
 				2D888C3F2AFB18D500180FF5 /* Dictionary+PercentEncoded.swift */,
 			);
@@ -394,11 +408,11 @@
 		D08ADECF2AFA663800111FC6 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				2D72F79E2AFCFC9D00BEC67D /* CharacterList */,
 				D07F41AE2AFACB77002F4130 /* Common */,
 				D08ADEEE2AFAC34B00111FC6 /* MainView.swift */,
 				D08ADEE42AFAB16100111FC6 /* LaunchScreenView.swift */,
 				D08ADEDB2AFAA0D800111FC6 /* CharacterDetailView.swift */,
-				D08ADEA52AFA5EAC00111FC6 /* CharacterListView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -619,6 +633,7 @@
 				2D888C422AFB192600180FF5 /* Optional+String.swift in Sources */,
 				D08ADEE82AFAB31D00111FC6 /* Main.swift in Sources */,
 				2D888C202AFB063700180FF5 /* SingleLocationResponse.swift in Sources */,
+				2D72F7A02AFCFCF000BEC67D /* CharacterItemView.swift in Sources */,
 				D08ADEA62AFA5EAC00111FC6 /* CharacterListView.swift in Sources */,
 				2D888C362AFB10AF00180FF5 /* MockApiClient.swift in Sources */,
 				2D888C1B2AFB054A00180FF5 /* CharacterResponse.swift in Sources */,
@@ -642,6 +657,7 @@
 				2D888C212AFB063700180FF5 /* CharacterStatusResponse.swift in Sources */,
 				D08ADED92AFA972800111FC6 /* CharacterListViewViewModel.swift in Sources */,
 				2D888C222AFB063700180FF5 /* CharacterGenderResponse.swift in Sources */,
+				2D72F7A22AFD031B00BEC67D /* View+Redacted.swift in Sources */,
 				2D888C482AFB49A700180FF5 /* BigSymmetricalProgressStyle.swift in Sources */,
 				D07F41B12AFACB77002F4130 /* AppFont.swift in Sources */,
 				2D888C5C2AFC5F5800180FF5 /* UbuntuAppFont.swift in Sources */,
