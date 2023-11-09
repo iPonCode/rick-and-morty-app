@@ -9,8 +9,13 @@ import Combine
 
 final class CharacterListViewViewModel: ObservableObject {
 
-	@Published private(set) var list: [Character] = []
+  @Published private(set) var list: [Character] = []
+  @Published private(set) var info: Info = .empty
   @Published private(set) var error: ApiError?
+
+  var areMoreItems: Bool {
+      info.next != nil
+    }
 
 //  init() {
 //    Task {

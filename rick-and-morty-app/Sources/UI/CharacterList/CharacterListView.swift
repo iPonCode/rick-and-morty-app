@@ -8,20 +8,20 @@
 import SwiftUI
 
 struct CharacterListView: View {
-	
-	@ObservedObject var viewModel: CharacterListViewViewModel
-
+  
+  @ObservedObject var viewModel: CharacterListViewViewModel
+  //@State private var scrollId: Character.ID?
+  
   var body: some View {
-
+    
     ScrollView(.vertical) {
-
+      
       LazyVStack {
-
+        
         ForEach(
-          viewModel.list,
-          id: \.self
+          viewModel.list
         ) { character in
-
+          
           NavigationLink(
             destination: CharacterDetailView(
               viewModel: CharacterDetailViewViewModel(
@@ -30,14 +30,6 @@ struct CharacterListView: View {
                 CharacterItemView(character: character)
               }
               .frame(height: 120)
-              /*
-              .containerRelativeFrame(
-                .vertical,
-                // TODO: calculate number of elements based on current screen height
-                count: 5,
-                spacing: 4
-              )
-              */
               .scrollTransition { content, phase in
                 content
                   .scaleEffect(phase.isIdentity ? 1.0 : 0.5, anchor: .trailing)
@@ -46,16 +38,33 @@ struct CharacterListView: View {
                   .blur(radius: phase.isIdentity ? 0.0 : 5.0)
               }
         }
+        if viewModel.areMoreItems {
+          ProgressView()
+            .controlSize(.extraLarge)
+            .tint(.purple)
+            .onAppear {
+              print("+* LOAD MORE ITEMS APPEARING")
+              //viewModel.fetchNextPage()
+            }
+            .onDisappear {
+              print("+* DISAPPEARING")
+            }
+        }
       }
       .safeAreaPadding(.all)
       .scrollTargetLayout()
     }
-    .scrollIndicators(.hidden)
+    //.scrollPosition(id: $scrollId)
+    //.defaultScrollAnchor(.bottom)
     //.scrollTargetBehavior(.paging)
     .scrollTargetBehavior(.viewAligned(limitBehavior: .automatic))
+    .scrollIndicators(.hidden)
     .navigationTitle("Character List")
+    //.onChange(of: scrollId) { oldValue, newValue in
+    //    print(newValue ?? "")
+    //}
   }
-
+  
 }
 
 struct CharacterListView_Previews: PreviewProvider {
