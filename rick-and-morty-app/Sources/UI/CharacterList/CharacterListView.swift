@@ -48,11 +48,11 @@ struct CharacterListView: View {
         }
       }
       .safeAreaPadding(.all)
-      //.scrollTargetLayout()
+      .scrollTargetLayout()
     }
     .scrollIndicators(.hidden)
     //.scrollTargetBehavior(.paging)
-    //.scrollTargetBehavior(.viewAligned(limitBehavior: .always))
+    .scrollTargetBehavior(.viewAligned(limitBehavior: .automatic))
     .navigationTitle("Character List")
   }
 
