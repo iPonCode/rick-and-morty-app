@@ -408,11 +408,11 @@
 		D08ADECF2AFA663800111FC6 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				2D72F79E2AFCFC9D00BEC67D /* CharacterList */,
-				D07F41AE2AFACB77002F4130 /* Common */,
-				D08ADEEE2AFAC34B00111FC6 /* MainView.swift */,
 				D08ADEE42AFAB16100111FC6 /* LaunchScreenView.swift */,
+				D08ADEEE2AFAC34B00111FC6 /* MainView.swift */,
+				2D72F79E2AFCFC9D00BEC67D /* CharacterList */,
 				D08ADEDB2AFAA0D800111FC6 /* CharacterDetailView.swift */,
+				D07F41AE2AFACB77002F4130 /* Common */,
 			);
 			path = UI;
 			sourceTree = "<group>";
