@@ -33,13 +33,11 @@ extension CharacterListViewViewModel {
 
     Task.init {
       do {
-        print("+* requesting now")
         let allCharactersResponse = try await apiClient.asyncRequest( // mockedApiClient.asyncRequest(
           endpoint: endPoint,
           responseModel: AllCharactersResponse.self,
           addAditionalHeaders: false
         )
-        print("+* response now")
         list = allCharactersResponse.results.map(CharacterMapper.map)
         info = InfoMapper.map(allCharactersResponse.info)
 
@@ -54,12 +52,10 @@ extension CharacterListViewViewModel {
 
     Task.init {
       do {
-        print("+* requesting by url now")
         let allCharactersResponse = try await apiClient.asyncRequestGetByUrl(
           responseModel: AllCharactersResponse.self,
           urlString: urlString
         )
-        print("+* response by url now")
         list
           .append(
             contentsOf: allCharactersResponse

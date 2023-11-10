@@ -20,7 +20,7 @@ struct MainView: View {
     Group {
 
       if main.lauchScreenHasBeenAlreadyDisplayed {
-        
+
         NavigationView {
           // let viewModel = CharacterListViewViewModel()
           CharacterListView(
