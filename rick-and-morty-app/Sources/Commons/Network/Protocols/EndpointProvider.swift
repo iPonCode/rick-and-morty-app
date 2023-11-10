@@ -12,7 +12,7 @@ protocol EndpointProvider {
 	var baseURL: String { get }
 	var path: String { get }
 	var method: RequestMethod { get }
-	var token: String { get }
+	var token: String { get } // not necessary for Rick and Morty API
 	var queryItems: [URLQueryItem]? { get }
 	var body: [String: Any]? { get }
 	var mockFile: String? { get }
@@ -29,7 +29,7 @@ extension EndpointProvider {
 	}
 
 	var token: String {
-		"" // recover token from keychain when necessary
+		"" // recover here the token from keychain when necessary
 	}
 
 	func asURLRequest(

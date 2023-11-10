@@ -8,20 +8,23 @@
 import Combine
 
 final class CharacterListViewViewModel: ObservableObject {
-
+  
   @Published private(set) var list: [Character] = []
   @Published private(set) var info: Info = .empty
   @Published private(set) var error: ApiError?
-
+  
   var areMoreItems: Bool {
-      info.next != nil
-    }
+    info.next != nil
+  }
+  
+  //  init() {
+  //    Task {
+  //      await asyncAllCharacters()
+  //    }
+  //  }
+}
 
-//  init() {
-//    Task {
-//      await asyncAllCharacters()
-//    }
-//  }
+extension CharacterListViewViewModel {
 
   @MainActor
   func asyncAllCharacters() async {
@@ -32,19 +35,24 @@ final class CharacterListViewViewModel: ObservableObject {
 
     Task.init {
       do {
-        print("requesting now")
+        print("+* requesting now")
         let allCharactersResponse = try await apiClient.asyncRequest( // mockedApiClient.asyncRequest(
           endpoint: endPoint,
           responseModel: AllCharactersResponse.self,
           addAditionalHeaders: false
         )
-        print("response now")
+        print("+* response now")
         list = allCharactersResponse.results.map(CharacterMapper.map)
+        info = InfoMapper.map(allCharactersResponse.info)
 
       } catch let error as ApiError {
         self.error = error
       }
     }
+  }
+
+  func fetchNextPage() {
+    // TODO: request by url next page
   }
 
 }
