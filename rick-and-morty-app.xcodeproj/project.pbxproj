@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D72F7A02AFCFCF000BEC67D /* CharacterItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D72F79F2AFCFCF000BEC67D /* CharacterItemView.swift */; };
+		2D72F7A22AFD031B00BEC67D /* View+Redacted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D72F7A12AFD031B00BEC67D /* View+Redacted.swift */; };
+		2D72F7A62AFD5B5500BEC67D /* InfoMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D72F7A52AFD5B5500BEC67D /* InfoMapper.swift */; };
+		2D72F7A82AFD5B8C00BEC67D /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D72F7A72AFD5B8C00BEC67D /* Info.swift */; };
+		2D72F7AA2AFD5D7000BEC67D /* InfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D72F7A92AFD5D7000BEC67D /* InfoResponse.swift */; };
 		2D888C172AFB046400180FF5 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D888C162AFB046400180FF5 /* Mapper.swift */; };
 		2D888C192AFB04C400180FF5 /* AllCharactersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D888C182AFB04C400180FF5 /* AllCharactersResponse.swift */; };
 		2D888C1B2AFB054A00180FF5 /* CharacterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D888C1A2AFB054A00180FF5 /* CharacterResponse.swift */; };
@@ -28,6 +33,16 @@
 		2D888C422AFB192600180FF5 /* Optional+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D888C412AFB192600180FF5 /* Optional+String.swift */; };
 		2D888C452AFB1AB600180FF5 /* _getAllCharactersResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D888C442AFB1AB600180FF5 /* _getAllCharactersResponse.json */; };
 		2D888C482AFB49A700180FF5 /* BigSymmetricalProgressStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D888C472AFB49A700180FF5 /* BigSymmetricalProgressStyle.swift */; };
+		2D888C522AFC5CBC00180FF5 /* Ubuntu-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D888C492AFC5CBB00180FF5 /* Ubuntu-Medium.ttf */; };
+		2D888C532AFC5CBC00180FF5 /* Ubuntu-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D888C4A2AFC5CBB00180FF5 /* Ubuntu-LightItalic.ttf */; };
+		2D888C542AFC5CBC00180FF5 /* Ubuntu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D888C4B2AFC5CBB00180FF5 /* Ubuntu-Light.ttf */; };
+		2D888C552AFC5CBC00180FF5 /* UbuntuFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D888C4C2AFC5CBB00180FF5 /* UbuntuFont.swift */; };
+		2D888C562AFC5CBC00180FF5 /* Ubuntu-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D888C4D2AFC5CBB00180FF5 /* Ubuntu-MediumItalic.ttf */; };
+		2D888C572AFC5CBC00180FF5 /* Ubuntu-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D888C4E2AFC5CBB00180FF5 /* Ubuntu-Italic.ttf */; };
+		2D888C582AFC5CBC00180FF5 /* Ubuntu-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D888C4F2AFC5CBB00180FF5 /* Ubuntu-BoldItalic.ttf */; };
+		2D888C592AFC5CBC00180FF5 /* Ubuntu-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D888C502AFC5CBB00180FF5 /* Ubuntu-Bold.ttf */; };
+		2D888C5A2AFC5CBC00180FF5 /* Ubuntu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D888C512AFC5CBB00180FF5 /* Ubuntu-Regular.ttf */; };
+		2D888C5C2AFC5F5800180FF5 /* UbuntuAppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D888C5B2AFC5F5800180FF5 /* UbuntuAppFont.swift */; };
 		D07F41AA2AFAC913002F4130 /* Rick_And_Morty.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D07F41A92AFAC913002F4130 /* Rick_And_Morty.ttf */; };
 		D07F41AC2AFAC953002F4130 /* RickAndMortyFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07F41AB2AFAC953002F4130 /* RickAndMortyFont.swift */; };
 		D07F41B12AFACB77002F4130 /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07F41B02AFACB77002F4130 /* AppFont.swift */; };
@@ -67,6 +82,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D72F79F2AFCFCF000BEC67D /* CharacterItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterItemView.swift; sourceTree = "<group>"; };
+		2D72F7A12AFD031B00BEC67D /* View+Redacted.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Redacted.swift"; sourceTree = "<group>"; };
+		2D72F7A52AFD5B5500BEC67D /* InfoMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoMapper.swift; sourceTree = "<group>"; };
+		2D72F7A72AFD5B8C00BEC67D /* Info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
+		2D72F7A92AFD5D7000BEC67D /* InfoResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoResponse.swift; sourceTree = "<group>"; };
 		2D888C162AFB046400180FF5 /* Mapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
 		2D888C182AFB04C400180FF5 /* AllCharactersResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllCharactersResponse.swift; sourceTree = "<group>"; };
 		2D888C1A2AFB054A00180FF5 /* CharacterResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterResponse.swift; sourceTree = "<group>"; };
@@ -88,6 +108,16 @@
 		2D888C412AFB192600180FF5 /* Optional+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional+String.swift"; sourceTree = "<group>"; };
 		2D888C442AFB1AB600180FF5 /* _getAllCharactersResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = _getAllCharactersResponse.json; sourceTree = "<group>"; };
 		2D888C472AFB49A700180FF5 /* BigSymmetricalProgressStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigSymmetricalProgressStyle.swift; sourceTree = "<group>"; };
+		2D888C492AFC5CBB00180FF5 /* Ubuntu-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Medium.ttf"; sourceTree = "<group>"; };
+		2D888C4A2AFC5CBB00180FF5 /* Ubuntu-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-LightItalic.ttf"; sourceTree = "<group>"; };
+		2D888C4B2AFC5CBB00180FF5 /* Ubuntu-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Light.ttf"; sourceTree = "<group>"; };
+		2D888C4C2AFC5CBB00180FF5 /* UbuntuFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UbuntuFont.swift; sourceTree = "<group>"; };
+		2D888C4D2AFC5CBB00180FF5 /* Ubuntu-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-MediumItalic.ttf"; sourceTree = "<group>"; };
+		2D888C4E2AFC5CBB00180FF5 /* Ubuntu-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Italic.ttf"; sourceTree = "<group>"; };
+		2D888C4F2AFC5CBB00180FF5 /* Ubuntu-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-BoldItalic.ttf"; sourceTree = "<group>"; };
+		2D888C502AFC5CBB00180FF5 /* Ubuntu-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Bold.ttf"; sourceTree = "<group>"; };
+		2D888C512AFC5CBB00180FF5 /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Regular.ttf"; sourceTree = "<group>"; };
+		2D888C5B2AFC5F5800180FF5 /* UbuntuAppFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UbuntuAppFont.swift; sourceTree = "<group>"; };
 		D07F41A92AFAC913002F4130 /* Rick_And_Morty.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Rick_And_Morty.ttf; sourceTree = "<group>"; };
 		D07F41AB2AFAC953002F4130 /* RickAndMortyFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RickAndMortyFont.swift; sourceTree = "<group>"; };
 		D07F41AD2AFACA3C002F4130 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -138,9 +168,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D72F79E2AFCFC9D00BEC67D /* CharacterList */ = {
+			isa = PBXGroup;
+			children = (
+				D08ADEA52AFA5EAC00111FC6 /* CharacterListView.swift */,
+				2D72F79F2AFCFCF000BEC67D /* CharacterItemView.swift */,
+			);
+			path = CharacterList;
+			sourceTree = "<group>";
+		};
 		2D888C0E2AFB02EB00180FF5 /* ApiModels */ = {
 			isa = PBXGroup;
 			children = (
+				2D72F7A92AFD5D7000BEC67D /* InfoResponse.swift */,
 				2D888C182AFB04C400180FF5 /* AllCharactersResponse.swift */,
 				2D888C1A2AFB054A00180FF5 /* CharacterResponse.swift */,
 				2D888C1D2AFB063700180FF5 /* CharacterStatusResponse.swift */,
@@ -154,6 +194,7 @@
 		2D888C0F2AFB02F700180FF5 /* Mappers */ = {
 			isa = PBXGroup;
 			children = (
+				2D72F7A52AFD5B5500BEC67D /* InfoMapper.swift */,
 				2D888C242AFB0B7100180FF5 /* CharacterMapper.swift */,
 			);
 			path = Mappers;
@@ -162,6 +203,7 @@
 		2D888C102AFB030000180FF5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2D72F7A72AFD5B8C00BEC67D /* Info.swift */,
 				2D888C262AFB0BC200180FF5 /* Character.swift */,
 			);
 			path = Models;
@@ -235,6 +277,7 @@
 		2D888C3E2AFB18D500180FF5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				2D72F7A12AFD031B00BEC67D /* View+Redacted.swift */,
 				2D888C412AFB192600180FF5 /* Optional+String.swift */,
 				2D888C3F2AFB18D500180FF5 /* Dictionary+PercentEncoded.swift */,
 			);
@@ -260,6 +303,15 @@
 		D07F41A82AFAC8C5002F4130 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				2D888C4C2AFC5CBB00180FF5 /* UbuntuFont.swift */,
+				2D888C502AFC5CBB00180FF5 /* Ubuntu-Bold.ttf */,
+				2D888C4F2AFC5CBB00180FF5 /* Ubuntu-BoldItalic.ttf */,
+				2D888C4E2AFC5CBB00180FF5 /* Ubuntu-Italic.ttf */,
+				2D888C4B2AFC5CBB00180FF5 /* Ubuntu-Light.ttf */,
+				2D888C4A2AFC5CBB00180FF5 /* Ubuntu-LightItalic.ttf */,
+				2D888C492AFC5CBB00180FF5 /* Ubuntu-Medium.ttf */,
+				2D888C4D2AFC5CBB00180FF5 /* Ubuntu-MediumItalic.ttf */,
+				2D888C512AFC5CBB00180FF5 /* Ubuntu-Regular.ttf */,
 				D07F41AB2AFAC953002F4130 /* RickAndMortyFont.swift */,
 				D07F41A92AFAC913002F4130 /* Rick_And_Morty.ttf */,
 			);
@@ -279,6 +331,7 @@
 			isa = PBXGroup;
 			children = (
 				D07F41B02AFACB77002F4130 /* AppFont.swift */,
+				2D888C5B2AFC5F5800180FF5 /* UbuntuAppFont.swift */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -364,11 +417,11 @@
 		D08ADECF2AFA663800111FC6 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				D07F41AE2AFACB77002F4130 /* Common */,
-				D08ADEEE2AFAC34B00111FC6 /* MainView.swift */,
 				D08ADEE42AFAB16100111FC6 /* LaunchScreenView.swift */,
+				D08ADEEE2AFAC34B00111FC6 /* MainView.swift */,
+				2D72F79E2AFCFC9D00BEC67D /* CharacterList */,
 				D08ADEDB2AFAA0D800111FC6 /* CharacterDetailView.swift */,
-				D08ADEA52AFA5EAC00111FC6 /* CharacterListView.swift */,
+				D07F41AE2AFACB77002F4130 /* Common */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -550,9 +603,17 @@
 			files = (
 				2D888C452AFB1AB600180FF5 /* _getAllCharactersResponse.json in Resources */,
 				D08ADEAB2AFA5EAE00111FC6 /* Preview Assets.xcassets in Resources */,
+				2D888C522AFC5CBC00180FF5 /* Ubuntu-Medium.ttf in Resources */,
+				2D888C572AFC5CBC00180FF5 /* Ubuntu-Italic.ttf in Resources */,
+				2D888C532AFC5CBC00180FF5 /* Ubuntu-LightItalic.ttf in Resources */,
+				2D888C542AFC5CBC00180FF5 /* Ubuntu-Light.ttf in Resources */,
 				D08ADEED2AFAB95600111FC6 /* launchScreen.mp4 in Resources */,
+				2D888C582AFC5CBC00180FF5 /* Ubuntu-BoldItalic.ttf in Resources */,
+				2D888C592AFC5CBC00180FF5 /* Ubuntu-Bold.ttf in Resources */,
 				D08ADEA82AFA5EAE00111FC6 /* Assets.xcassets in Resources */,
 				D07F41AA2AFAC913002F4130 /* Rick_And_Morty.ttf in Resources */,
+				2D888C562AFC5CBC00180FF5 /* Ubuntu-MediumItalic.ttf in Resources */,
+				2D888C5A2AFC5CBC00180FF5 /* Ubuntu-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,9 +641,12 @@
 				2D888C372AFB10AF00180FF5 /* RequestMethod.swift in Sources */,
 				2D888C422AFB192600180FF5 /* Optional+String.swift in Sources */,
 				D08ADEE82AFAB31D00111FC6 /* Main.swift in Sources */,
+				2D72F7A82AFD5B8C00BEC67D /* Info.swift in Sources */,
 				2D888C202AFB063700180FF5 /* SingleLocationResponse.swift in Sources */,
+				2D72F7A02AFCFCF000BEC67D /* CharacterItemView.swift in Sources */,
 				D08ADEA62AFA5EAC00111FC6 /* CharacterListView.swift in Sources */,
 				2D888C362AFB10AF00180FF5 /* MockApiClient.swift in Sources */,
+				2D72F7AA2AFD5D7000BEC67D /* InfoResponse.swift in Sources */,
 				2D888C1B2AFB054A00180FF5 /* CharacterResponse.swift in Sources */,
 				D08ADEDE2AFAA16700111FC6 /* CharacterDetailViewViewModel.swift in Sources */,
 				2D888C3A2AFB10AF00180FF5 /* Mockable.swift in Sources */,
@@ -596,6 +660,7 @@
 				2D888C382AFB10AF00180FF5 /* EndpointProvider.swift in Sources */,
 				2D888C352AFB10AF00180FF5 /* ApiClient.swift in Sources */,
 				2D888C3D2AFB14AF00180FF5 /* ApiError.swift in Sources */,
+				2D888C552AFC5CBC00180FF5 /* UbuntuFont.swift in Sources */,
 				2D888C252AFB0B7100180FF5 /* CharacterMapper.swift in Sources */,
 				2D888C392AFB10AF00180FF5 /* ApiProtocol.swift in Sources */,
 				2D888C192AFB04C400180FF5 /* AllCharactersResponse.swift in Sources */,
@@ -603,9 +668,12 @@
 				2D888C212AFB063700180FF5 /* CharacterStatusResponse.swift in Sources */,
 				D08ADED92AFA972800111FC6 /* CharacterListViewViewModel.swift in Sources */,
 				2D888C222AFB063700180FF5 /* CharacterGenderResponse.swift in Sources */,
+				2D72F7A22AFD031B00BEC67D /* View+Redacted.swift in Sources */,
 				2D888C482AFB49A700180FF5 /* BigSymmetricalProgressStyle.swift in Sources */,
 				D07F41B12AFACB77002F4130 /* AppFont.swift in Sources */,
+				2D888C5C2AFC5F5800180FF5 /* UbuntuAppFont.swift in Sources */,
 				2D888C232AFB063700180FF5 /* OriginResponse.swift in Sources */,
+				2D72F7A62AFD5B5500BEC67D /* InfoMapper.swift in Sources */,
 				D08ADEDC2AFAA0D800111FC6 /* CharacterDetailView.swift in Sources */,
 				D08ADEE22AFAA95100111FC6 /* OneTimePlayerUIView.swift in Sources */,
 				D08ADEE52AFAB16100111FC6 /* LaunchScreenView.swift in Sources */,
@@ -781,6 +849,8 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -812,6 +882,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -14,7 +14,7 @@ class CharacterMapper: Mapper {
 	) -> Character {
 
     Character(
-      id: String(from.id),
+      id: from.id,
       name: from.name,
       status: from.status.rawValue,
       species: from.species,
