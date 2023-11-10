@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/iPonCode/rick-and-morty-app">
-    <img src="images/rick-and-morty-render.jpg" alt="Logo" width="192" height="192">
+    <img src="images/rick-and-morty-render.gif" alt="Logo" width="192" height="192">
   </a>
 
   <h3 align="center">Rick and Morty App</h3>
@@ -19,9 +19,9 @@ This is a simple code test with the purpose of develop an app to review every si
 
 
 Extra requirements:
-- [ ] Use SwiftUI
-- [ ] Cache images from network to improve performance
-- [ ] Error handling
+- [x] Use SwiftUI
+- [x] Cache images from network to improve performance
+- [x] Error handling
 - [ ] Response caching
 - [ ] Implemnt test
 - [ ] Filter or Search
