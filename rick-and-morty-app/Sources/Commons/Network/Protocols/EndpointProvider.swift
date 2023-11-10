@@ -12,7 +12,7 @@ protocol EndpointProvider {
 	var baseURL: String { get }
 	var path: String { get }
 	var method: RequestMethod { get }
-	var token: String { get } // not necessary for Rick and Morty API
+	// A token can be declared here (not necessary for Rick and Morty API)
 	var queryItems: [URLQueryItem]? { get }
 	var body: [String: Any]? { get }
 	var mockFile: String? { get }
@@ -28,13 +28,10 @@ extension EndpointProvider {
 		"rickandmortyapi.com"
 	}
 
-	var token: String {
-		"" // recover here the token from keychain when necessary
-	}
+  // can recover here the token from keychain when necessary
+  // var token: String { … }
 
-	func asURLRequest(
-		_ addAditionalHeaders: Bool = true
-	) throws -> URLRequest {
+	func asURLRequest() throws -> URLRequest {
 
 		var urlComponents = URLComponents()
 		urlComponents.scheme = scheme
@@ -55,15 +52,8 @@ extension EndpointProvider {
 		var urlRequest = URLRequest(url: url)
 		urlRequest.httpMethod = method.rawValue
 
-		if addAditionalHeaders {
-			urlRequest.addValue("application/json", forHTTPHeaderField: "Accept")
-			urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
-			urlRequest.addValue("true", forHTTPHeaderField: "X-Use-Cache")
-		}
-
-		if !token.isEmpty { // Use token if present
-			urlRequest.addValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
-		}
+		// Aditional Headers like Content-Type or Token can be added here…
+    // urlRequest.addValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
 
 		if let body {
 			urlRequest.httpBody = body.percentEncoded()

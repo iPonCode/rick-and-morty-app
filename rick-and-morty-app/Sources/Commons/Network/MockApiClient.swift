@@ -12,8 +12,7 @@ class MockApiClient: Mockable,
 
 	func asyncRequest<T>(
 		endpoint: EndpointProvider,
-		responseModel: T.Type,
-		addAditionalHeaders: Bool = true
+		responseModel: T.Type
 	) async throws -> T where T: Decodable {
 
 		loadJSON(

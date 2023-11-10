@@ -35,8 +35,7 @@ extension CharacterListViewViewModel {
       do {
         let allCharactersResponse = try await apiClient.asyncRequest( // mockedApiClient.asyncRequest(
           endpoint: endPoint,
-          responseModel: AllCharactersResponse.self,
-          addAditionalHeaders: false
+          responseModel: AllCharactersResponse.self
         )
         list = allCharactersResponse.results.map(CharacterMapper.map)
         info = InfoMapper.map(allCharactersResponse.info)

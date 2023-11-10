@@ -29,13 +29,12 @@ extension ApiClient {
 
   func asyncRequest<T: Decodable>(
 		endpoint: EndpointProvider,
-		responseModel: T.Type,
-		addAditionalHeaders: Bool
+		responseModel: T.Type
 	) async throws -> T {
 
     do {
       let (data, response) = try await session.data(
-        for: endpoint.asURLRequest(addAditionalHeaders)
+        for: endpoint.asURLRequest()
       )
       return try self.manageResponse(data: data, response: response)
 
@@ -64,10 +63,6 @@ extension ApiClient {
 
     var urlRequest = URLRequest(url: url)
     urlRequest.httpMethod = RequestMethod.get.rawValue
-    // TODO: Probabily not necessary, check and remove if not:
-    // urlRequest.addValue("application/json", forHTTPHeaderField: "Accept")
-    // urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
-    // urlRequest.addValue("true", forHTTPHeaderField: "X-Use-Cache")
 
     do {
       let (data, response) = try await session.data(

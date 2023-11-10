@@ -11,8 +11,7 @@ protocol ApiProtocol {
 
 	func asyncRequest<T: Decodable>(
 		endpoint: EndpointProvider,
-		responseModel: T.Type,
-		addAditionalHeaders: Bool
+		responseModel: T.Type
 	) async throws -> T
 }
 
