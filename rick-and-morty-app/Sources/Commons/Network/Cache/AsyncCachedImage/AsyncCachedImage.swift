@@ -7,22 +7,40 @@
 
 import SwiftUI
 
-struct AsyncCachedImage: View {
+struct AsyncCachedImage<Content: View>: View {
 
 	@StateObject private var handler = AsyncCachedImageHandler()
 	let url: String
 
+	/// Need this `@ViewBuilder` content to return a differents Views depending on state,
+	/// This is a clousure used to pass through the phase `AsyncImagePhase`,
+	/// (same type used by `AsyncImage`) to comunicate with any View that uses `AsyncCachedImage`.
+	/// The `@ViewBuilder` attribute indicates SwiftUI that this Content can be any kind of View
+	@ViewBuilder let content: (AsyncImagePhase) -> Content
+
 	var body: some View {
 
 		ZStack {
-			if let data = handler.data,
-				 let image = UIImage(data: data) {
-				Image(uiImage: image)
-					.resizable()
-				// TODO: refactor AsyncCachedImage with states to allow
-				// 			 apply this modifiers in the View and not here.
-					.frame(width: 120, height: 120)
-					.aspectRatio(contentMode: .fit)
+
+			switch handler.state {
+			case .idle, .fetching:
+				content(.empty)
+			case .success(let imageData):
+				if let image = UIImage(data: imageData) {
+					content(
+						.success(
+							Image(uiImage: image
+							)))
+				} else {
+					content(
+						.failure(
+							ApiError(
+								errorCode: "invalidData",
+								message: "Invalid Image Data"
+					)))
+				}
+			case .failure(let error):
+				content(.failure(error))
 			}
 		}
 		.task {
@@ -35,6 +53,8 @@ struct AsyncCachedImage: View {
 	AsyncCachedImage(
 //		url: "https://rickandmortyapi.com/api/character/avatar/249.jpeg"
 		url: Character.previewData.image
-	)
+	) { contetn in
+		EmptyView()
+	}
 }
 

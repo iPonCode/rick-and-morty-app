@@ -50,6 +50,8 @@
 		D07F41B62AFE4069002F4130 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07F41B52AFE4069002F4130 /* ImageCache.swift */; };
 		D07F41B92AFE40ED002F4130 /* AsyncCachedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07F41B82AFE40ED002F4130 /* AsyncCachedImage.swift */; };
 		D07F41BB2AFE411C002F4130 /* AsyncCachedImageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07F41BA2AFE411C002F4130 /* AsyncCachedImageHandler.swift */; };
+		D07F41BD2AFEB59F002F4130 /* AsyncCachedImageState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07F41BC2AFEB59F002F4130 /* AsyncCachedImageState.swift */; };
+		D07F41BF2AFEB8B0002F4130 /* String+Substring.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07F41BE2AFEB8B0002F4130 /* String+Substring.swift */; };
 		D08ADEA42AFA5EAC00111FC6 /* RickAndMortyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08ADEA32AFA5EAC00111FC6 /* RickAndMortyApp.swift */; };
 		D08ADEA62AFA5EAC00111FC6 /* CharacterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08ADEA52AFA5EAC00111FC6 /* CharacterListView.swift */; };
 		D08ADEA82AFA5EAE00111FC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D08ADEA72AFA5EAE00111FC6 /* Assets.xcassets */; };
@@ -130,6 +132,8 @@
 		D07F41B52AFE4069002F4130 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		D07F41B82AFE40ED002F4130 /* AsyncCachedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncCachedImage.swift; sourceTree = "<group>"; };
 		D07F41BA2AFE411C002F4130 /* AsyncCachedImageHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncCachedImageHandler.swift; sourceTree = "<group>"; };
+		D07F41BC2AFEB59F002F4130 /* AsyncCachedImageState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncCachedImageState.swift; sourceTree = "<group>"; };
+		D07F41BE2AFEB8B0002F4130 /* String+Substring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Substring.swift"; sourceTree = "<group>"; };
 		D08ADEA02AFA5EAC00111FC6 /* rick-and-morty-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rick-and-morty-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D08ADEA32AFA5EAC00111FC6 /* RickAndMortyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyApp.swift; sourceTree = "<group>"; };
 		D08ADEA52AFA5EAC00111FC6 /* CharacterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListView.swift; sourceTree = "<group>"; };
@@ -286,6 +290,7 @@
 		2D888C3E2AFB18D500180FF5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				D07F41BE2AFEB8B0002F4130 /* String+Substring.swift */,
 				2D72F7A12AFD031B00BEC67D /* View+Redacted.swift */,
 				2D888C412AFB192600180FF5 /* Optional+String.swift */,
 				2D888C3F2AFB18D500180FF5 /* Dictionary+PercentEncoded.swift */,
@@ -360,6 +365,7 @@
 			children = (
 				D07F41B82AFE40ED002F4130 /* AsyncCachedImage.swift */,
 				D07F41BA2AFE411C002F4130 /* AsyncCachedImageHandler.swift */,
+				D07F41BC2AFEB59F002F4130 /* AsyncCachedImageState.swift */,
 			);
 			path = AsyncCachedImage;
 			sourceTree = "<group>";
@@ -682,6 +688,7 @@
 				D07F41AC2AFAC953002F4130 /* RickAndMortyFont.swift in Sources */,
 				D08ADEEF2AFAC34B00111FC6 /* MainView.swift in Sources */,
 				D08ADEE32AFAA95100111FC6 /* PlayerView.swift in Sources */,
+				D07F41BD2AFEB59F002F4130 /* AsyncCachedImageState.swift in Sources */,
 				2D888C172AFB046400180FF5 /* Mapper.swift in Sources */,
 				D07F41B62AFE4069002F4130 /* ImageCache.swift in Sources */,
 				2D888C272AFB0BC200180FF5 /* Character.swift in Sources */,
@@ -693,6 +700,7 @@
 				2D888C252AFB0B7100180FF5 /* CharacterMapper.swift in Sources */,
 				2D888C392AFB10AF00180FF5 /* ApiProtocol.swift in Sources */,
 				2D888C192AFB04C400180FF5 /* AllCharactersResponse.swift in Sources */,
+				D07F41BF2AFEB8B0002F4130 /* String+Substring.swift in Sources */,
 				D07F41BB2AFE411C002F4130 /* AsyncCachedImageHandler.swift in Sources */,
 				2D888C332AFB10AF00180FF5 /* CharactersEndpoints.swift in Sources */,
 				2D888C212AFB063700180FF5 /* CharacterStatusResponse.swift in Sources */,
