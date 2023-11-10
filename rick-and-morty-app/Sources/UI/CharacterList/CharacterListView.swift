@@ -38,13 +38,15 @@ struct CharacterListView: View {
                   .blur(radius: phase.isIdentity ? 0.0 : 5.0)
               }
         }
-        if viewModel.areMoreItems {
+        if let url = viewModel.areMoreItems {
           ProgressView()
             .controlSize(.extraLarge)
             .tint(.purple)
             .onAppear {
               print("+* LOAD MORE ITEMS APPEARING")
-              //viewModel.fetchNextPage()
+              Task {
+                await viewModel.fetchNextCharactersPage(url)
+              }
             }
             .onDisappear {
               print("+* DISAPPEARING")

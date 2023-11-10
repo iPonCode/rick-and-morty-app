@@ -12,10 +12,10 @@ final class CharacterListViewViewModel: ObservableObject {
   @Published private(set) var list: [Character] = []
   @Published private(set) var info: Info = .empty
   @Published private(set) var error: ApiError?
-  
-  var areMoreItems: Bool {
-    info.next != nil
-  }
+
+  // let mockedApiClient = MockApiClient()
+  let apiClient = ApiClient()
+  var areMoreItems: String? { info.next }
   
   //  init() {
   //    Task {
@@ -30,8 +30,6 @@ extension CharacterListViewViewModel {
   func asyncAllCharacters() async {
 
     let endPoint = CharactersEndpoints.character
-    // let mockedApiClient = MockApiClient()
-    let apiClient = ApiClient()
 
     Task.init {
       do {
@@ -51,8 +49,29 @@ extension CharacterListViewViewModel {
     }
   }
 
-  func fetchNextPage() {
-    // TODO: request by url next page
+  @MainActor
+  func fetchNextCharactersPage(_ urlString: String) async {
+
+    Task.init {
+      do {
+        print("+* requesting by url now")
+        let allCharactersResponse = try await apiClient.asyncRequestGetByUrl(
+          responseModel: AllCharactersResponse.self,
+          urlString: urlString
+        )
+        print("+* response by url now")
+        list
+          .append(
+            contentsOf: allCharactersResponse
+              .results
+              .map(CharacterMapper.map)
+          )
+        info = InfoMapper.map(allCharactersResponse.info)
+
+      } catch let error as ApiError {
+        self.error = error
+      }
+    }
   }
 
 }

@@ -8,12 +8,12 @@
 import Foundation
 
 final class ApiClient: ApiProtocol {
-  
+
   private enum Constants {
     static let defaultNetworkError = "network"
   }
-  
-  var session: URLSession {
+
+  private var session: URLSession {
     let configuration = URLSessionConfiguration.default
     configuration.waitsForConnectivity = true
     // time (seconds) that a task will wait for data to arrive
@@ -24,30 +24,31 @@ final class ApiClient: ApiProtocol {
   }
 }
 
+// MARK: - Exposed methods
 extension ApiClient {
 
-	func asyncRequest<T: Decodable>(
+  func asyncRequest<T: Decodable>(
 		endpoint: EndpointProvider,
 		responseModel: T.Type,
 		addAditionalHeaders: Bool
 	) async throws -> T {
 
-		do {
-			let (data, response) = try await session.data(
-				for: endpoint.asURLRequest(addAditionalHeaders)
-			)
-			return try self.manageResponse(data: data, response: response)
+    do {
+      let (data, response) = try await session.data(
+        for: endpoint.asURLRequest(addAditionalHeaders)
+      )
+      return try self.manageResponse(data: data, response: response)
 
-		} catch let error as ApiError {
-			throw error
+    } catch let error as ApiError {
+      throw error
 
-		} catch {
-			throw ApiError(
-				errorCode: Constants.defaultNetworkError,
-				message: "Unknown API error \(error.localizedDescription)"
-			)
-		}
-	}
+    } catch {
+      throw ApiError(
+        errorCode: Constants.defaultNetworkError,
+        message: "Unknown API error \(error.localizedDescription)"
+      )
+    }
+  }
 
   func asyncRequestGetByUrl<T: Decodable>(
     responseModel: T.Type,
@@ -84,8 +85,10 @@ extension ApiClient {
       )
     }
   }
+
 }
 
+// MARK: - Private methods
 private extension ApiClient {
 
 	func manageResponse<T: Decodable>(
@@ -122,6 +125,7 @@ private extension ApiClient {
 					message: "Unknown backend error"
 				)
 			}
+
 			if response.statusCode == 403 {
 				throw ApiError(
 					statusCode: response.statusCode,
@@ -129,6 +133,7 @@ private extension ApiClient {
 					message: "Check if this error can be caused by an expired token: \(decodedError)"
 				)
 			}
+
 			if response.statusCode == 405 {
 				throw ApiError(
 					statusCode: response.statusCode,
@@ -136,6 +141,7 @@ private extension ApiClient {
 					message: "Check if this error can be caused by invalid headers in request: \(decodedError)"
 				)
 			}
+
 			throw ApiError(
 				statusCode: response.statusCode,
 				errorCode: decodedError.errorCode,
@@ -143,5 +149,6 @@ private extension ApiClient {
 			)
 		}
 	}
+
 }
 
