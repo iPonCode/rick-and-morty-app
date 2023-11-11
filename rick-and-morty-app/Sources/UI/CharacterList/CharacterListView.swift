@@ -27,7 +27,7 @@ struct CharacterListView: View {
               viewModel: CharacterDetailViewViewModel(
                 character: character.name
               ))) {
-                CharacterItemView(character: character)
+                CharacterItemView(character: character) // TODO: Chache Image instead use AsyncImage
               }
               .frame(height: 120)
               .scrollTransition { content, phase in

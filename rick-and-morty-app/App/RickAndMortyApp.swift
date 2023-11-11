@@ -54,10 +54,10 @@ private extension RickAndMortyApp {
 	func printAppFontFamilies() {
 
 		for family in UIFont.familyNames {
-			print("\(family)")
+      debugLog("\(family)")
 
 			for name in UIFont.fontNames(forFamilyName: family) {
-				print("   \(name)")
+        debugLog("\t\t\(name)")
 			}
 		}
 	}

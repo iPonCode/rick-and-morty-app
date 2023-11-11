@@ -12,6 +12,7 @@
 		2D72F7A62AFD5B5500BEC67D /* InfoMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D72F7A52AFD5B5500BEC67D /* InfoMapper.swift */; };
 		2D72F7A82AFD5B8C00BEC67D /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D72F7A72AFD5B8C00BEC67D /* Info.swift */; };
 		2D72F7AA2AFD5D7000BEC67D /* InfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D72F7A92AFD5D7000BEC67D /* InfoResponse.swift */; };
+		2D72F7B02AFEFA0900BEC67D /* DebugLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D72F7AF2AFEFA0900BEC67D /* DebugLog.swift */; };
 		2D888C172AFB046400180FF5 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D888C162AFB046400180FF5 /* Mapper.swift */; };
 		2D888C192AFB04C400180FF5 /* AllCharactersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D888C182AFB04C400180FF5 /* AllCharactersResponse.swift */; };
 		2D888C1B2AFB054A00180FF5 /* CharacterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D888C1A2AFB054A00180FF5 /* CharacterResponse.swift */; };
@@ -46,6 +47,12 @@
 		D07F41AA2AFAC913002F4130 /* Rick_And_Morty.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D07F41A92AFAC913002F4130 /* Rick_And_Morty.ttf */; };
 		D07F41AC2AFAC953002F4130 /* RickAndMortyFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07F41AB2AFAC953002F4130 /* RickAndMortyFont.swift */; };
 		D07F41B12AFACB77002F4130 /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07F41B02AFACB77002F4130 /* AppFont.swift */; };
+		D07F41B42AFE22BE002F4130 /* ImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07F41B32AFE22BE002F4130 /* ImageFetcher.swift */; };
+		D07F41B62AFE4069002F4130 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07F41B52AFE4069002F4130 /* ImageCache.swift */; };
+		D07F41B92AFE40ED002F4130 /* AsyncCachedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07F41B82AFE40ED002F4130 /* AsyncCachedImage.swift */; };
+		D07F41BB2AFE411C002F4130 /* AsyncCachedImageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07F41BA2AFE411C002F4130 /* AsyncCachedImageHandler.swift */; };
+		D07F41BD2AFEB59F002F4130 /* AsyncCachedImageState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07F41BC2AFEB59F002F4130 /* AsyncCachedImageState.swift */; };
+		D07F41BF2AFEB8B0002F4130 /* String+Substring.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07F41BE2AFEB8B0002F4130 /* String+Substring.swift */; };
 		D08ADEA42AFA5EAC00111FC6 /* RickAndMortyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08ADEA32AFA5EAC00111FC6 /* RickAndMortyApp.swift */; };
 		D08ADEA62AFA5EAC00111FC6 /* CharacterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08ADEA52AFA5EAC00111FC6 /* CharacterListView.swift */; };
 		D08ADEA82AFA5EAE00111FC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D08ADEA72AFA5EAE00111FC6 /* Assets.xcassets */; };
@@ -87,6 +94,7 @@
 		2D72F7A52AFD5B5500BEC67D /* InfoMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoMapper.swift; sourceTree = "<group>"; };
 		2D72F7A72AFD5B8C00BEC67D /* Info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
 		2D72F7A92AFD5D7000BEC67D /* InfoResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoResponse.swift; sourceTree = "<group>"; };
+		2D72F7AF2AFEFA0900BEC67D /* DebugLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugLog.swift; sourceTree = "<group>"; };
 		2D888C162AFB046400180FF5 /* Mapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
 		2D888C182AFB04C400180FF5 /* AllCharactersResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllCharactersResponse.swift; sourceTree = "<group>"; };
 		2D888C1A2AFB054A00180FF5 /* CharacterResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterResponse.swift; sourceTree = "<group>"; };
@@ -122,6 +130,12 @@
 		D07F41AB2AFAC953002F4130 /* RickAndMortyFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RickAndMortyFont.swift; sourceTree = "<group>"; };
 		D07F41AD2AFACA3C002F4130 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D07F41B02AFACB77002F4130 /* AppFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppFont.swift; sourceTree = "<group>"; };
+		D07F41B32AFE22BE002F4130 /* ImageFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFetcher.swift; sourceTree = "<group>"; };
+		D07F41B52AFE4069002F4130 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		D07F41B82AFE40ED002F4130 /* AsyncCachedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncCachedImage.swift; sourceTree = "<group>"; };
+		D07F41BA2AFE411C002F4130 /* AsyncCachedImageHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncCachedImageHandler.swift; sourceTree = "<group>"; };
+		D07F41BC2AFEB59F002F4130 /* AsyncCachedImageState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncCachedImageState.swift; sourceTree = "<group>"; };
+		D07F41BE2AFEB8B0002F4130 /* String+Substring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Substring.swift"; sourceTree = "<group>"; };
 		D08ADEA02AFA5EAC00111FC6 /* rick-and-morty-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rick-and-morty-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D08ADEA32AFA5EAC00111FC6 /* RickAndMortyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyApp.swift; sourceTree = "<group>"; };
 		D08ADEA52AFA5EAC00111FC6 /* CharacterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListView.swift; sourceTree = "<group>"; };
@@ -177,6 +191,14 @@
 			path = CharacterList;
 			sourceTree = "<group>";
 		};
+		2D72F7AE2AFEF9E500BEC67D /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				2D72F7AF2AFEFA0900BEC67D /* DebugLog.swift */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
 		2D888C0E2AFB02EB00180FF5 /* ApiModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +236,7 @@
 			children = (
 				2D888C282AFB10AF00180FF5 /* Network */,
 				2D888C142AFB046400180FF5 /* Utils */,
+				2D72F7AE2AFEF9E500BEC67D /* Debug */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -244,6 +267,7 @@
 				2D888C292AFB10AF00180FF5 /* EndPointsProviders */,
 				2D888C2F2AFB10AF00180FF5 /* Protocols */,
 				2D888C3B2AFB14AF00180FF5 /* Models */,
+				D07F41B22AFE22BE002F4130 /* Cache */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -277,6 +301,7 @@
 		2D888C3E2AFB18D500180FF5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				D07F41BE2AFEB8B0002F4130 /* String+Substring.swift */,
 				2D72F7A12AFD031B00BEC67D /* View+Redacted.swift */,
 				2D888C412AFB192600180FF5 /* Optional+String.swift */,
 				2D888C3F2AFB18D500180FF5 /* Dictionary+PercentEncoded.swift */,
@@ -334,6 +359,26 @@
 				2D888C5B2AFC5F5800180FF5 /* UbuntuAppFont.swift */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		D07F41B22AFE22BE002F4130 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				D07F41B72AFE40C4002F4130 /* AsyncCachedImage */,
+				D07F41B32AFE22BE002F4130 /* ImageFetcher.swift */,
+				D07F41B52AFE4069002F4130 /* ImageCache.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		D07F41B72AFE40C4002F4130 /* AsyncCachedImage */ = {
+			isa = PBXGroup;
+			children = (
+				D07F41B82AFE40ED002F4130 /* AsyncCachedImage.swift */,
+				D07F41BA2AFE411C002F4130 /* AsyncCachedImageHandler.swift */,
+				D07F41BC2AFEB59F002F4130 /* AsyncCachedImageState.swift */,
+			);
+			path = AsyncCachedImage;
 			sourceTree = "<group>";
 		};
 		D08ADE972AFA5EAC00111FC6 = {
@@ -653,8 +698,11 @@
 				2D888C402AFB18D500180FF5 /* Dictionary+PercentEncoded.swift in Sources */,
 				D07F41AC2AFAC953002F4130 /* RickAndMortyFont.swift in Sources */,
 				D08ADEEF2AFAC34B00111FC6 /* MainView.swift in Sources */,
+				2D72F7B02AFEFA0900BEC67D /* DebugLog.swift in Sources */,
 				D08ADEE32AFAA95100111FC6 /* PlayerView.swift in Sources */,
+				D07F41BD2AFEB59F002F4130 /* AsyncCachedImageState.swift in Sources */,
 				2D888C172AFB046400180FF5 /* Mapper.swift in Sources */,
+				D07F41B62AFE4069002F4130 /* ImageCache.swift in Sources */,
 				2D888C272AFB0BC200180FF5 /* Character.swift in Sources */,
 				D08ADEA42AFA5EAC00111FC6 /* RickAndMortyApp.swift in Sources */,
 				2D888C382AFB10AF00180FF5 /* EndpointProvider.swift in Sources */,
@@ -664,6 +712,8 @@
 				2D888C252AFB0B7100180FF5 /* CharacterMapper.swift in Sources */,
 				2D888C392AFB10AF00180FF5 /* ApiProtocol.swift in Sources */,
 				2D888C192AFB04C400180FF5 /* AllCharactersResponse.swift in Sources */,
+				D07F41BF2AFEB8B0002F4130 /* String+Substring.swift in Sources */,
+				D07F41BB2AFE411C002F4130 /* AsyncCachedImageHandler.swift in Sources */,
 				2D888C332AFB10AF00180FF5 /* CharactersEndpoints.swift in Sources */,
 				2D888C212AFB063700180FF5 /* CharacterStatusResponse.swift in Sources */,
 				D08ADED92AFA972800111FC6 /* CharacterListViewViewModel.swift in Sources */,
@@ -672,10 +722,12 @@
 				2D888C482AFB49A700180FF5 /* BigSymmetricalProgressStyle.swift in Sources */,
 				D07F41B12AFACB77002F4130 /* AppFont.swift in Sources */,
 				2D888C5C2AFC5F5800180FF5 /* UbuntuAppFont.swift in Sources */,
+				D07F41B42AFE22BE002F4130 /* ImageFetcher.swift in Sources */,
 				2D888C232AFB063700180FF5 /* OriginResponse.swift in Sources */,
 				2D72F7A62AFD5B5500BEC67D /* InfoMapper.swift in Sources */,
 				D08ADEDC2AFAA0D800111FC6 /* CharacterDetailView.swift in Sources */,
 				D08ADEE22AFAA95100111FC6 /* OneTimePlayerUIView.swift in Sources */,
+				D07F41B92AFE40ED002F4130 /* AsyncCachedImage.swift in Sources */,
 				D08ADEE52AFAB16100111FC6 /* LaunchScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -837,9 +889,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"rick-and-morty-app/Preview Content\"";
+				DEVELOPMENT_TEAM = L5TVGKA54T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "rick-and-morty-app/Info.plist";
@@ -858,6 +912,7 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "es.ipon.rick-and-morty-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -869,9 +924,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"rick-and-morty-app/Preview Content\"";
+				DEVELOPMENT_TEAM = L5TVGKA54T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "rick-and-morty-app/Info.plist";
@@ -890,6 +947,7 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "es.ipon.rick-and-morty-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
