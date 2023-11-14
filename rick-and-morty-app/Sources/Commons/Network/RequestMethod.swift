@@ -9,5 +9,5 @@ import Foundation
 
 enum RequestMethod: String {
 
-	case get = "GET" // add many as needed
+  case get = "GET" // add many as needed
 }

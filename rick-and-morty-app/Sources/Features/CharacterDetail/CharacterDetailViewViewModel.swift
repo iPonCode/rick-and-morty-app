@@ -9,9 +9,10 @@ import Combine
 
 final class CharacterDetailViewViewModel: ObservableObject {
 
-	private(set) var character: String
+  private(set) var character: String
 
-	init(character: String) {
-		self.character = character
-	}
+  init(character: String) {
+    self.character = character
+  }
 }
+

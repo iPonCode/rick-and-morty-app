@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MainView: View {
 
-	@EnvironmentObject var main: Main
+  @EnvironmentObject var main: Main
 
   // The viewModel was created here instead inside conditional,
   // for launching the first request as soon as possible
@@ -41,17 +41,17 @@ struct MainView: View {
       }
     }
   }
-
+  
 }
 
 struct MainView_Previews: PreviewProvider {
 
-	static var previews: some View {
-		let main = Main()
+  static var previews: some View {
+    let main = Main()
 
-		MainView()
-			.environmentObject(main)
-			.previewDisplayName("Main")
-	}
+    MainView()
+      .environmentObject(main)
+      .previewDisplayName("Main")
+  }
 }
 

@@ -9,9 +9,9 @@ import Foundation
 
 protocol ApiProtocol {
 
-	func asyncRequest<T: Decodable>(
-		endpoint: EndpointProvider,
-		responseModel: T.Type
-	) async throws -> T
+  func asyncRequest<T: Decodable>(
+    endpoint: EndpointProvider,
+    responseModel: T.Type
+  ) async throws -> T
 }
 

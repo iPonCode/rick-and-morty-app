@@ -9,13 +9,12 @@ import Foundation
 
 struct Info {
 
-  let count,
-      pages: Int
-  let next,
-      prev: String?
+  let count, pages: Int
+  let next, prev: String?
 }
 
 extension Info {
+
   static var empty: Info {
     Info(
       count: 0,

@@ -9,7 +9,7 @@ import SwiftUI
 
 enum UbuntuFont: String, CaseIterable {
 
-	case regular = "Ubuntu-Regular",
+  case regular = "Ubuntu-Regular",
        italic = "Ubuntu-Italic",
        light = "Ubuntu-Light",
        lightItalic = "Ubuntu-LightItalic",
@@ -21,15 +21,15 @@ enum UbuntuFont: String, CaseIterable {
 
 extension Font {
 
-	static func ubuntu(
-		_ type: UbuntuFont,
-		size: CGFloat
-	) -> Font {
+  static func ubuntu(
+    _ type: UbuntuFont,
+    size: CGFloat
+  ) -> Font {
 
-		.custom(
+    .custom(
       type.rawValue,
       size: size
     )
-	}
+  }
 }
 

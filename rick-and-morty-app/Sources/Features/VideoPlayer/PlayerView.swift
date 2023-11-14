@@ -9,29 +9,30 @@ import SwiftUI
 import AVFoundation
 
 struct PlayerView: UIViewRepresentable {
-	private let videoName: String
-	private let player: AVPlayer
 
-	init(
-		videoName: String,
-		player: AVPlayer
-	) {
-		self.videoName = videoName
-		self.player = player
-	}
+  private let videoName: String
+  private let player: AVPlayer
 
-	func updateUIView(
-		_ uiView: UIView,
-		context: UIViewRepresentableContext<PlayerView>
-	) {}
+  init(
+    videoName: String,
+    player: AVPlayer
+  ) {
+    self.videoName = videoName
+    self.player = player
+  }
 
-	func makeUIView(
-		context: Context
-	) -> UIView {
-		OneTimePlayerUIView(
-			videoName: videoName,
-			player: player
-		)
-	}
+  func updateUIView(
+    _ uiView: UIView,
+    context: UIViewRepresentableContext<PlayerView>
+  ) {}
+
+  func makeUIView(
+    context: Context
+  ) -> UIView {
+    OneTimePlayerUIView(
+      videoName: videoName,
+      player: player
+    )
+  }
 }
 

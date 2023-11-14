@@ -9,9 +9,9 @@ import Foundation
 
 class InfoMapper: Mapper {
 
-	static func map(
-		_ from: InfoResponse
-	) -> Info {
+  static func map(
+    _ from: InfoResponse
+  ) -> Info {
 
     Info(
       count: from.count,
@@ -19,6 +19,6 @@ class InfoMapper: Mapper {
       next: from.next,
       prev: from.prev
     )
-	}
+  }
 }
 

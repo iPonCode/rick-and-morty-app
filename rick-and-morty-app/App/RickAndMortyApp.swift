@@ -10,7 +10,8 @@ import SwiftUI
 @main
 struct RickAndMortyApp: App {
 
-	init() {
+  // MARK: - Configurations
+  init() {
 		// printAppFontFamilies()
 		configureNavigationBarAppearance()
 	}
@@ -19,7 +20,8 @@ struct RickAndMortyApp: App {
 
 		WindowGroup {
 
-			let main = Main()
+      // MARK: - Initialization & Dependency injection
+      let main = Main()
 			MainView()
 				.environmentObject(main)
 
@@ -27,6 +29,7 @@ struct RickAndMortyApp: App {
 	}
 }
 
+// MARK: - Private Methods
 private extension RickAndMortyApp {
 
 	func configureNavigationBarAppearance() {

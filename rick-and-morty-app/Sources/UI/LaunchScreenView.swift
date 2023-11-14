@@ -10,7 +10,7 @@ import AVFoundation
 
 struct LaunchScreenView: View {
 
-	@EnvironmentObject var main: Main
+  @EnvironmentObject var main: Main
 
   @State private var progressAmount = 0.0
   let totalAmount = 4 / 0.1
@@ -20,55 +20,55 @@ struct LaunchScreenView: View {
     in: .common
   ).autoconnect()
 
-	@State private var player = AVPlayer()
-	private let videoName = "launchScreen"
+  @State private var player = AVPlayer()
+  private let videoName = "launchScreen"
 
-	var body: some View {
+  var body: some View {
 
-		GeometryReader { proxy in
-			PlayerView(
-				videoName: videoName,
-				player: player
-			)
-			.aspectRatio(contentMode: .fill)
-			.frame(width: proxy.size.width, height: proxy.size.height)
-			.onAppear {
-				player.play()
-			}
-			.onDisappear {
-				player.pause()
-			}
+    GeometryReader { proxy in
+      PlayerView(
+        videoName: videoName,
+        player: player
+      )
+      .aspectRatio(contentMode: .fill)
+      .frame(width: proxy.size.width, height: proxy.size.height)
+      .onAppear {
+        player.play()
+      }
+      .onDisappear {
+        player.pause()
+      }
+      
+      // MARK: item Did Play To End Time
+      .onReceive(
+        NotificationCenter.default.publisher(
+          for: NSNotification.Name(
+            rawValue: "AVPlayerItemDidPlayToEndTimeNotification"
+          )
+        )
+      ) { _ in // item
+        withAnimation {
+          main.lauchScreenHasBeenAlreadyDisplayed = true
+        }
+      }
 
-			// MARK: item Did Play To End Time
-			.onReceive(
-				NotificationCenter.default.publisher(
-					for: NSNotification.Name(
-						rawValue: "AVPlayerItemDidPlayToEndTimeNotification"
-					)
-				)
-			) { _ in // item
-				withAnimation {
-					main.lauchScreenHasBeenAlreadyDisplayed = true
-				}
-			}
+      // MARK: did Become Active
+      .onReceive(
+        NotificationCenter.default.publisher(
+          for: UIApplication.didBecomeActiveNotification
+        )
+      ) { _ in
+        player.play()
+      }
 
-			// MARK: did Become Active
-			.onReceive(
-				NotificationCenter.default.publisher(
-					for: UIApplication.didBecomeActiveNotification
-				)
-			) { _ in
-				player.play()
-			}
-
-			// MARK: will Resign Active
-			.onReceive(
-				NotificationCenter.default.publisher(
-					for: UIApplication.willResignActiveNotification
-				)
-			) { _ in
-				player.pause()
-			}
+      // MARK: will Resign Active
+      .onReceive(
+        NotificationCenter.default.publisher(
+          for: UIApplication.willResignActiveNotification
+        )
+      ) { _ in
+        player.pause()
+      }
       .overlay(alignment: .center) {
         ProgressView(
           value: progressAmount,
@@ -89,9 +89,9 @@ struct LaunchScreenView: View {
           }
         }
       }
-		}
-		.ignoresSafeArea()
-	}
+    }
+    .ignoresSafeArea()
+  }
 }
 
 struct LaunchScreenView_Previews: PreviewProvider {

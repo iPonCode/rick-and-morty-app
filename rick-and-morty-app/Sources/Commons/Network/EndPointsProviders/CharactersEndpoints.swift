@@ -8,31 +8,31 @@
 import Foundation
 
 enum CharactersEndpoints: EndpointProvider {
-	case character
+  case character
 
-	var path: String {
-		switch self {
-		case .character:
-			return "/api/character"
-		}
-	}
+  var path: String {
+    switch self {
+      case .character:
+        return "/api/character"
+    }
+  }
 
-	var method: RequestMethod {
-		switch self {
-		case .character:
-			return .get
-		}
-	}
+  var method: RequestMethod {
+    switch self {
+      case .character:
+        return .get
+    }
+  }
 
-	var queryItems: [URLQueryItem]? { nil }
+  var queryItems: [URLQueryItem]? { nil }
 
-	var body: [String: Any]? { nil }
+  var body: [String: Any]? { nil }
 
-	var mockFile: String? {
-		switch self {
-		case .character:
-			return "_getAllCharactersResponse"
-		}
-	}
+  var mockFile: String? {
+    switch self {
+      case .character:
+        return "_getAllCharactersResponse"
+    }
+  }
 }
 

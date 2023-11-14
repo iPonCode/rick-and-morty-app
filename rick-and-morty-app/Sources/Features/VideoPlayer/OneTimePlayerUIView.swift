@@ -10,36 +10,36 @@ import AVFoundation
 
 class OneTimePlayerUIView: UIView {
 
-	private let playerLayer = AVPlayerLayer()
+  private let playerLayer = AVPlayerLayer()
 
-	required init?(coder: NSCoder) {
-		fatalError("init(coder:) has not been implemented")
-	}
+  required init?(coder: NSCoder) {
+    fatalError("init(coder:) has not been implemented")
+  }
 
-	init(videoName: String,
-			 player: AVPlayer,
-			 videoGravity: AVLayerVideoGravity = .resizeAspect) {
+  init(videoName: String,
+       player: AVPlayer,
+       videoGravity: AVLayerVideoGravity = .resizeAspect) {
 
-		super.init(frame: .zero)
+    super.init(frame: .zero)
 
-		guard let fileUrl = Bundle.main.url(
-			forResource: videoName,
-			withExtension: "mp4")
-		else { return }
+    guard let fileUrl = Bundle.main.url(
+      forResource: videoName,
+      withExtension: "mp4")
+    else { return }
 
-		let asset = AVAsset(url: fileUrl)
-		let item = AVPlayerItem(asset: asset)
+    let asset = AVAsset(url: fileUrl)
+    let item = AVPlayerItem(asset: asset)
 
-		player.replaceCurrentItem(with: item)
-		player.isMuted = true
-		playerLayer.player = player
-		playerLayer.videoGravity = videoGravity
-		layer.addSublayer(playerLayer)
-	}
+    player.replaceCurrentItem(with: item)
+    player.isMuted = true
+    playerLayer.player = player
+    playerLayer.videoGravity = videoGravity
+    layer.addSublayer(playerLayer)
+  }
 
-	override func layoutSubviews() {
-		super.layoutSubviews()
-		playerLayer.frame = bounds
-	}
+  override func layoutSubviews() {
+    super.layoutSubviews()
+    playerLayer.frame = bounds
+  }
 }
 

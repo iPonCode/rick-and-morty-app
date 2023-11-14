@@ -9,7 +9,7 @@ import Foundation
 
 struct SingleLocationResponse: Codable {
 
-    let name: String
-    let url: String
+  let name: String
+  let url: String
 }
 

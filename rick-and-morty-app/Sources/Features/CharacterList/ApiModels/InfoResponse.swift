@@ -9,9 +9,7 @@ import Foundation
 
 struct InfoResponse: Codable {
 
-    let count,
-        pages: Int
-    let next,
-        prev: String?
+  let count, pages: Int
+  let next, prev: String?
 }
 

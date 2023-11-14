@@ -9,16 +9,16 @@ import SwiftUI
 
 struct CharacterDetailView: View {
 
-	@ObservedObject var viewModel: CharacterDetailViewViewModel
+  @ObservedObject var viewModel: CharacterDetailViewViewModel
 
-	var body: some View {
+  var body: some View {
 
-		VStack {
-			Text(viewModel.character)
-				.font(.appFont(.regular28))
-		}
-		.navigationTitle("Character Detail")
-	}
+    VStack {
+      Text(viewModel.character)
+        .font(.appFont(.regular28))
+    }
+    .navigationTitle("Character Detail")
+  }
 
 }
 

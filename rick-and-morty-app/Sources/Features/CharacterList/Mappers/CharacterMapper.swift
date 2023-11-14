@@ -9,9 +9,9 @@ import Foundation
 
 class CharacterMapper: Mapper {
 
-	static func map(
-		_ from: CharacterResponse
-	) -> Character {
+  static func map(
+    _ from: CharacterResponse
+  ) -> Character {
 
     Character(
       id: from.id,
@@ -26,6 +26,6 @@ class CharacterMapper: Mapper {
       numberOfEpisodes: String(from.episode.count),
       created: from.created
     )
-	}
+  }
 }
 

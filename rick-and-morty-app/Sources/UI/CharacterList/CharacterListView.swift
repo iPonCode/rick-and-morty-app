@@ -59,12 +59,12 @@ struct CharacterListView: View {
           }
 
         } else {
-            Group {
-              Text("No more Characters, ") +
-              Text("\(viewModel.list.count)").font(.ubuntuAppFont(.bold17)) +
-              Text(" loaded.")
-            }
-            .font(.ubuntuAppFont(.regular16))
+          Group {
+            Text("No more Characters, ") +
+            Text("\(viewModel.list.count)").font(.ubuntuAppFont(.bold17)) +
+            Text(" loaded.")
+          }
+          .font(.ubuntuAppFont(.regular16))
         }
       }
       .safeAreaPadding(.all)
@@ -76,11 +76,8 @@ struct CharacterListView: View {
     //.scrollTargetBehavior(.viewAligned(limitBehavior: .automatic))
     .scrollIndicators(.hidden)
     //.navigationTitle("Character List")
-    //.onChange(of: scrollId) { oldValue, newValue in
-    //    print(newValue ?? "")
-    //}
   }
-
+  
 }
 
 struct CharacterListView_Previews: PreviewProvider {

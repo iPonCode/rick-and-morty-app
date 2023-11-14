@@ -16,12 +16,6 @@ final class CharacterListViewViewModel: ObservableObject {
   // let mockedApiClient = MockApiClient()
   let apiClient = ApiClient()
   var areMoreItems: String? { info.next }
-  
-  //  init() {
-  //    Task {
-  //      await asyncAllCharacters()
-  //    }
-  //  }
 }
 
 extension CharacterListViewViewModel {

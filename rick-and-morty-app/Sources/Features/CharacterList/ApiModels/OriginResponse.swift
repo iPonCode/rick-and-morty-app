@@ -9,7 +9,7 @@ import Foundation
 
 struct OriginResponse: Codable {
 
-    let name: String
-    let url: String
+  let name: String
+  let url: String
 }
 

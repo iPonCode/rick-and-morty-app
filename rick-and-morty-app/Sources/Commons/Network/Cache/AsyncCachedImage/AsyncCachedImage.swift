@@ -51,7 +51,6 @@ struct AsyncCachedImage<Content: View>: View {
 
 #Preview {
 	AsyncCachedImage(
-//		url: "https://rickandmortyapi.com/api/character/avatar/249.jpeg"
 		url: Character.previewData.image
 	) { contetn in
 		EmptyView()

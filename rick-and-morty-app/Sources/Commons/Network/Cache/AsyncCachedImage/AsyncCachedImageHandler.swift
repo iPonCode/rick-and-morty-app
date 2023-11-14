@@ -50,7 +50,9 @@ class AsyncCachedImageHandler: ObservableObject {
 }
 
 private extension AsyncCachedImageHandler {
+
 	enum LogSource: String { case network, cache }
+
 	func logOperation(_ source: LogSource, key: String) {
 		let message = "fetching " + "…" + key.last(15) + " from " + source.rawValue.uppercased()
     debugLog(message)

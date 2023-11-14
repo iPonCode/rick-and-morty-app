@@ -12,6 +12,7 @@ struct ImageFetcher {
 	/*
 	/// Can customize the .timeoutIntervalForRequest for fetching image
 	/// and use session.data(from: url) instead URLSession.shared.data(from: url)
+
 	private var session: URLSession {
 		let configuration = URLSessionConfiguration.default
 		configuration.waitsForConnectivity = true

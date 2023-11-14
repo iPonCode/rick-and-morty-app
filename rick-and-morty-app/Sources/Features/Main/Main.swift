@@ -11,3 +11,4 @@ final class Main: ObservableObject {
 
 	@Published var lauchScreenHasBeenAlreadyDisplayed: Bool = false
 }
+
