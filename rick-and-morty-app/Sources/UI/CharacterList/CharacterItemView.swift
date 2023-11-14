@@ -102,12 +102,10 @@ struct CharacterItemView: View {
 
 }
 
-struct CharacterItemView_Previews: PreviewProvider {
 
-  static var previews: some View {
-    CharacterItemView(
-      character: Character.previewData
-    )
-  }
+#Preview {
+  CharacterItemView(
+    character: Character.previewData
+  )
 }
 

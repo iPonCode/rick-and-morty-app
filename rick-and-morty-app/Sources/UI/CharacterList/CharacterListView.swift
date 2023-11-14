@@ -77,15 +77,13 @@ struct CharacterListView: View {
     .scrollIndicators(.hidden)
     //.navigationTitle("Character List")
   }
-  
+
 }
 
-struct CharacterListView_Previews: PreviewProvider {
 
-  static var previews: some View {
-    CharacterListView(
-      viewModel: CharacterListViewViewModel()
-    )
-  }
+#Preview {
+  CharacterListView(
+    viewModel: CharacterListViewViewModel()
+  )
 }
 

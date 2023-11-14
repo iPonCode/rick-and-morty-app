@@ -41,17 +41,14 @@ struct MainView: View {
       }
     }
   }
-  
+
 }
 
-struct MainView_Previews: PreviewProvider {
 
-  static var previews: some View {
-    let main = Main()
-
-    MainView()
-      .environmentObject(main)
-      .previewDisplayName("Main")
-  }
+#Preview {
+  MainView()
+    .environmentObject(
+      Main()
+    )
 }
 

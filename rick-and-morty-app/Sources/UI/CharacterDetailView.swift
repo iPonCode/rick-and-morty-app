@@ -22,12 +22,10 @@ struct CharacterDetailView: View {
 
 }
 
-struct CharacterDetailView_Previews: PreviewProvider {
 
-  static var previews: some View {
-    CharacterDetailView(
-      viewModel: CharacterDetailViewViewModel(character: "Character 33")
-    )
-  }
+#Preview {
+  CharacterDetailView(
+    viewModel: CharacterDetailViewViewModel(character: "Character 33")
+  )
 }
 
